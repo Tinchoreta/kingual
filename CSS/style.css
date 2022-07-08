@@ -441,11 +441,8 @@ footer h4 {
 
 @media screen and (max-width: 768px) {
 
-    .titulos{
-        display: none;
-    }
-
-    /* .mainPresentation {
+  
+    .mainPresentation {
 
         display: flex;
         flex-direction: column;
@@ -458,7 +455,7 @@ footer h4 {
         background-color: aquamarine;
     }
 
-    .mainPresentation img {
+    /* .mainPresentation img {
         display: none;
     } */
 }
