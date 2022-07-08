@@ -1,0 +1,394 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo 2', cursive;
+}
+
+/* Paleta de colores (palette 115 Coolors.co) 03045E (3,4,94) • 0077B6 (0,119,182) • 00B4D8 (0,180,216) • 90E0EF (144,224,239) • CAF0F8 (202,240,248)*/
+/*Index*/
+
+header {
+    /* background-image: url(../images/LogoKingualBlanco.jpeg);
+    background-repeat:no-repeat; */
+    margin: 0 auto;
+    padding: 0;
+    background-color: rgb(0, 119, 182);
+    font-size: medium;
+    position: sticky;
+    max-height: 30vh;
+    top: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    /* background-image: ; */
+}
+
+header a img {
+    margin: 0;
+}
+
+
+.menuPrincipal {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    text-decoration: none;
+    list-style: none;
+    padding: 3px;
+
+}
+
+
+.menuPrincipal__item {
+
+    align-items: center;
+    margin: 2px;
+    padding: 6px;
+    border: solid 2px #03045E;
+    border-radius: 6px;
+    background: whitesmoke;
+    font-weight: 500;
+    font-size: medium;
+}
+
+.menuPrincipal__item a {
+    text-decoration: none;
+}
+
+.menuPrincipal__item :hover {
+    box-shadow: 0 3px 9px rgb(0, 180, 216);
+}
+
+.titulos {
+    text-align: center;
+}
+
+h1 {
+    /* width: max-content; */
+    font-size: x-large;
+}
+
+.cabecera {
+    background-color: rgb(0, 119, 182);
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 30px;
+    padding: 10px;
+}
+
+.cabecera__item {
+    background-color: rgb(0, 119, 182);
+    text-decoration: none;
+    margin: 30px;
+    padding: 10px;
+}
+
+main section {
+    margin: 10px;
+    padding: 10px;
+}
+
+.mainPresentation {
+    margin: 10px;
+    padding: 10px;
+    justify-content: start;
+    align-content: flex-start;
+    /* width:fit-content; */
+    display: grid;
+    grid-template-columns: repeat(3, minmax(min-content, max-content));
+    grid-template-areas: 
+    "foto texto"
+    "foto article";
+}
+
+.mainPresentation img {
+
+    margin: 0px;
+    padding: 15px;
+    height: 400px;
+    width: 400px;
+    object-fit: contain;
+    grid-column: 1;
+    /* grid-row: 1/3; */
+    grid-area: foto;
+}
+
+.mainPresentation p {
+
+    margin: 0px 10px 10px 10px;
+    padding: 5px;
+    width: fit-content;
+    grid-column: 1/3;
+    grid-area: texto;
+}
+
+article {
+
+    margin: 1px;
+    padding: 1px;
+    grid-column: 1/3;
+    grid-area: article;
+
+}
+article ol {
+
+    margin: 30px;
+    padding: 1px;
+}
+
+.mainVideo {
+
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.mainVideo__item {
+
+    margin: 30px;
+    padding: 10px;
+}
+
+.whatsapp {
+
+    /*background-color: #7ACC72; /* Green */
+    display: flex;
+    border: none;
+    cursor: pointer;
+    align-items: flex-end;
+    position: fixed;
+    justify-content: right;
+    bottom: 17%;
+    right: 0.5%;
+}
+
+body footer section h4 {
+    margin: 20px;
+    font-size: larger;
+}
+
+.piePaginaSocial {
+    display: flex;
+    margin: 20 auto;
+    /*width:fit-content;*/
+}
+
+.piePaginaSocial__Item {
+    display: inline;
+    margin: 20px;
+    align-self: center;
+}
+
+.piePaginaDir {
+    margin: 10px auto;
+    /*width: max-content;*/
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+    justify-content: right;
+
+}
+
+.piePaginaDir__List {
+    /*  width:fit-content;  */
+    margin: 2px;
+    padding: 2px;
+    align-items: flex-end;
+    text-decoration: none;
+    list-style-type: none;
+    border: solid 3px #03045E;
+    border-radius: 6px;
+    background: whitesmoke;
+    font-weight: 300;
+    font-size: small;
+}
+
+.piePaginaDir__List__Item {
+
+    margin: 3px;
+    padding: 2px 5px 2px 5px;
+
+}
+
+.piePaginaCopy {
+    background-color: rgb(0, 119, 182);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.piePaginaCopy p {
+
+    text-shadow: #03045E;
+    align-items: center;
+    justify-content: center;
+    font: 100 #CAF0F8;
+}
+
+
+
+/*Staff*/
+
+.body {
+    background-color: rgba(14, 44, 23, 36);
+}
+
+
+.staffCards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 75vh;
+    background: #efefef;
+    flex-wrap: wrap;
+    
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: .5s;
+    margin: 15px 20px;
+    display:inline-table;
+}
+
+.card:hover {
+    box-shadow: 0 5px 15px rgb(0, 180, 216);
+    transform: translateY(-15px);
+}
+
+.card .head {
+    height: 125px;
+    width: 100%;
+    position: relative;
+}
+
+.card .head .circle {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: #00B4D8;
+    bottom: 0;
+}
+
+.card .head .img {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    bottom: -30%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.card .head .img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.card .description {
+    height: 200px;
+    padding: 40px 20px 20px 20px;
+    border-bottom: solid 1px rgba(6, 74, 76, .18);
+    text-align: center;
+}
+
+.card .description h3 {
+    color: #05383a;
+}
+
+.card .description h4 {
+    color: #0077B6;
+}
+
+.card .description p {
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+
+.card .contact {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .contact a {
+    text-decoration: none;
+    color: #fff;
+    background: #0077B6;
+    padding: 5px 20px;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.card .contact a:hover {
+
+    background: #0b6164;
+
+}
+
+/*Contacto*/
+
+.contactForm {
+    width: max-content;
+    margin: 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #0077B6;
+    border: solid 2px #03045E;
+    border-radius: 8px;
+}
+
+.contactForm div {
+
+    margin: 8px;
+    padding: 5px;
+    align-self: flex-end;
+}
+
+.contactForm button {
+    margin-right: 15px;
+    width: fit-content;
+    align-self: flex-end;
+}
+
+/*Media Queries*/
+
+@media screen and (max-width: 768px){
+
+.mainPresentation{
+    
+    display: grid; 
+    align-content: stretch;
+    grid-template-columns: repeat(1, 1fr);
+    /* grid-template-rows: 3; */
+    grid-template-areas: 
+    "foto"
+    "texto"
+    "article";
+    background-color: aquamarine; 
+}
+
+.mainPresentation img {
+    display: none;
+} 
+}
