@@ -230,8 +230,8 @@ footer h4 {
     align-items: flex-end;
     text-decoration: none;
     justify-content: right;
-    min-width: min-content;
-    max-width: max-content;
+    /* min-width: min-content;
+    max-width: max-content; */
     grid-area: direcciones;
 
 }
@@ -431,19 +431,24 @@ footer h4 {
 
 /*Planes*/
 
-.gridMain {
+/* .gridMain {
 
     min-height: calc(100vh-51.6-180.8);
-    /* max-width: max-content; */
-}
+} 
+*/
 
 /*Media Queries*/
 
 @media screen and (max-width: 768px) {
 
-    .mainPresentation {
+    .titulos{
+        display: none;
+    }
 
-        display: grid;
+    /* .mainPresentation {
+
+        display: flex;
+        flex-direction: column;
         align-content: stretch;
         grid-template-columns: 1;
         grid-template-areas:
@@ -455,5 +460,5 @@ footer h4 {
 
     .mainPresentation img {
         display: none;
-    }
+    } */
 }
