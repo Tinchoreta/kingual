@@ -8,31 +8,46 @@
 /*Index*/
 
 header {
-    /* background-image: url(../images/LogoKingualBlanco.jpeg);
-    background-repeat:no-repeat; */
-    margin: 0 auto;
-    padding: 0;
+
     background-color: rgb(0, 119, 182);
     font-size: medium;
     position: sticky;
-    max-height: 30vh;
+    min-height: min-content;
+    max-height: max-content;
     top: 0;
     display: grid;
+    align-content: start;
+    justify-content: start;
     grid-template-columns: repeat(2, 1fr);
-    
-    /* background-image: ; */
 }
 
-header a img {
-    margin: 0;
+header a {
+    padding-top: 7px;
+    padding-left: 10px;
+    justify-self: start;
+    align-self: center;
 }
 
+nav {
+    justify-self: end;
+    align-self: end;
+}
+
+nav ul li a{
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-self: center;
+    justify-self: center;
+}
 
 .menuPrincipal {
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    justify-content: right;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
     text-decoration: none;
     list-style: none;
     padding: 3px;
@@ -43,6 +58,8 @@ header a img {
 .menuPrincipal__item {
 
     align-items: center;
+    justify-items: center;
+    align-self: center;
     margin: 2px;
     padding: 6px;
     border: solid 2px #03045E;
@@ -95,14 +112,14 @@ main section {
 .mainPresentation {
     margin: 10px;
     padding: 10px;
+    width: 90%;
     justify-content: start;
     align-content: flex-start;
-    /* width:fit-content; */
     display: grid;
     grid-template-columns: repeat(3, minmax(min-content, max-content));
-    grid-template-areas: 
-    "foto texto"
-    "foto article";
+    grid-template-areas:
+        "foto texto"
+        "foto article";
 }
 
 .mainPresentation img {
@@ -134,6 +151,7 @@ article {
     grid-area: article;
 
 }
+
 article ol {
 
     margin: 30px;
@@ -153,43 +171,68 @@ article ol {
     padding: 10px;
 }
 
-.whatsapp {
-
-    /*background-color: #7ACC72; /* Green */
-    display: flex;
-    border: none;
-    cursor: pointer;
-    align-items: flex-end;
-    position: fixed;
-    justify-content: right;
-    bottom: 17%;
-    right: 0.5%;
+footer {
+    background-color: #00B4D8;
+    display: grid;
+    align-content: stretch;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "redes . direcciones"
+        "copyright copyright copyright"
+    ;
 }
 
-body footer section h4 {
-    margin: 20px;
+.redesSociales {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+    min-width: min-content;
+    max-width: max-content;
+    text-decoration: none;
+    grid-area: redes;
+
+}
+
+footer h4 {
+    margin-top: 10px;
+    padding-left: 10px;
     font-size: larger;
 }
 
 .piePaginaSocial {
     display: flex;
-    margin: 20 auto;
-    /*width:fit-content;*/
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    padding-left: 10px;
+    text-decoration: none;
+    border: solid 3px #03045E;
+    border-radius: 6px;
+    background: whitesmoke;
+
 }
 
 .piePaginaSocial__Item {
-    display: inline;
-    margin: 20px;
+    display: inline-block;
+    margin: 15px;
     align-self: center;
+
+    text-decoration: none;
 }
 
 .piePaginaDir {
     margin: 10px auto;
-    /*width: max-content;*/
+    margin-right: 15px;
     display: flex;
+    align-self: end;
     align-items: flex-end;
     text-decoration: none;
     justify-content: right;
+    min-width: min-content;
+    max-width: max-content;
+    grid-area: direcciones;
 
 }
 
@@ -215,21 +258,36 @@ body footer section h4 {
 }
 
 .piePaginaCopy {
-    background-color: rgb(0, 119, 182);
+    background-color: #0077b6;
 
     display: flex;
     align-items: center;
     justify-content: center;
+    grid-area: copyright;
 }
 
 .piePaginaCopy p {
 
     text-shadow: #03045E;
+    color: #CAF0F8;
+    text-decoration-color: #03045E;
     align-items: center;
     justify-content: center;
     font: 100 #CAF0F8;
 }
 
+.whatsapp {
+
+    /*background-color: #7ACC72; /* Green */
+    display: flex;
+    border: none;
+    cursor: pointer;
+    align-items: flex-end;
+    position: fixed;
+    justify-content: right;
+    bottom: 30%;
+    right: 0.5%;
+}
 
 
 /*Staff*/
@@ -246,7 +304,7 @@ body footer section h4 {
     min-height: 75vh;
     background: #efefef;
     flex-wrap: wrap;
-    
+
 }
 
 .card {
@@ -258,7 +316,7 @@ body footer section h4 {
     overflow: hidden;
     transition: .5s;
     margin: 15px 20px;
-    display:inline-table;
+    display: inline-table;
 }
 
 .card:hover {
@@ -371,24 +429,31 @@ body footer section h4 {
     align-self: flex-end;
 }
 
-/*Media Queries*/
+/*Planes*/
 
-@media screen and (max-width: 768px){
+.gridMain {
 
-.mainPresentation{
-    
-    display: grid; 
-    align-content: stretch;
-    grid-template-columns: repeat(1, 1fr);
-    /* grid-template-rows: 3; */
-    grid-template-areas: 
-    "foto"
-    "texto"
-    "article";
-    background-color: aquamarine; 
+    min-height: calc(100vh-51.6-180.8);
+    /* max-width: max-content; */
 }
 
-.mainPresentation img {
-    display: none;
-} 
+/*Media Queries*/
+
+@media screen and (max-width: 768px) {
+
+    .mainPresentation {
+
+        display: grid;
+        align-content: stretch;
+        grid-template-columns: 1;
+        grid-template-areas:
+            "foto"
+            "texto"
+            "article";
+        background-color: aquamarine;
+    }
+
+    .mainPresentation img {
+        display: none;
+    }
 }
