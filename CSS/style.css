@@ -33,7 +33,7 @@ nav {
     align-self: end;
 }
 
-nav ul li a{
+nav ul li a {
     align-items: center;
     justify-content: center;
     justify-items: center;
@@ -46,6 +46,7 @@ nav ul li a{
     display: flex;
     flex-direction: row;
     align-items: center;
+    align-content: center;
     align-self: center;
     justify-content: center;
     text-decoration: none;
@@ -60,6 +61,7 @@ nav ul li a{
     align-items: center;
     justify-items: center;
     align-self: center;
+    align-content: center;
     margin: 2px;
     padding: 6px;
     border: solid 2px #03045E;
@@ -71,6 +73,7 @@ nav ul li a{
 
 .menuPrincipal__item a {
     text-decoration: none;
+    align-content: center;
 }
 
 .menuPrincipal__item :hover {
@@ -79,12 +82,16 @@ nav ul li a{
 
 .titulos {
     text-align: center;
+    font-size: xx-large;
+    margin-top: .5em;
 }
 
-h1 {
-    /* width: max-content; */
-    font-size: x-large;
+.titulosSecundarios {
+    margin-left: 0.5em;
+    text-align: Left;
+    margin-top: 0.5em;
 }
+
 
 .cabecera {
     background-color: rgb(0, 119, 182);
@@ -114,7 +121,7 @@ main section {
     padding: 10px;
     width: 90%;
     justify-content: start;
-    align-content: flex-start;
+    align-content: start;
     display: grid;
     grid-template-columns: repeat(3, minmax(min-content, max-content));
     grid-template-areas:
@@ -130,16 +137,13 @@ main section {
     width: 400px;
     object-fit: contain;
     grid-column: 1;
-    /* grid-row: 1/3; */
     grid-area: foto;
 }
 
-.mainPresentation p {
+.firstText {
 
-    margin: 0px 10px 10px 10px;
+    margin: 75px 10px 10px 0px;
     padding: 5px;
-    width: fit-content;
-    grid-column: 1/3;
     grid-area: texto;
 }
 
@@ -154,8 +158,14 @@ article {
 
 article ol {
 
-    margin: 30px;
+    margin: 10px;
+    margin-left: 30px;
     padding: 1px;
+}
+
+.articleText {
+
+    margin-top: 10px;
 }
 
 .mainVideo {
@@ -167,18 +177,20 @@ article ol {
 
 .mainVideo__item {
 
-    margin: 30px;
+    margin: 10px;
     padding: 10px;
+    min-width: fit-content;
 }
 
 footer {
     background-color: #00B4D8;
     display: grid;
-    align-content: stretch;
+    align-content: space-between;
     justify-content: center;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "redes . direcciones"
-        "copyright copyright copyright"
+    /* grid-template-columns: repeat(3,1fr); */
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: "redes none none direcciones"
+        "copyright copyright copyright copyright"
     ;
 }
 
@@ -187,12 +199,17 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 20px;
-    min-width: min-content;
-    max-width: max-content;
+    padding-left: 0.5em;
+    /* min-width: min-content;
+    max-width: max-content; */
     text-decoration: none;
     grid-area: redes;
 
+}
+
+.redesSociales h4 {
+
+    font-size: small;
 }
 
 footer h4 {
@@ -216,10 +233,14 @@ footer h4 {
 
 .piePaginaSocial__Item {
     display: inline-block;
-    margin: 15px;
+    margin: 0.5em;
     align-self: center;
-
     text-decoration: none;
+}
+
+.piePaginaSocial__Item img {
+    width: 30px;
+    object-fit: contain;
 }
 
 .piePaginaDir {
@@ -230,14 +251,11 @@ footer h4 {
     align-items: flex-end;
     text-decoration: none;
     justify-content: right;
-    /* min-width: min-content;
-    max-width: max-content; */
     grid-area: direcciones;
 
 }
 
 .piePaginaDir__List {
-    /*  width:fit-content;  */
     margin: 2px;
     padding: 2px;
     align-items: flex-end;
@@ -252,8 +270,8 @@ footer h4 {
 
 .piePaginaDir__List__Item {
 
-    margin: 3px;
-    padding: 2px 5px 2px 5px;
+    margin: 2px;
+    padding: 2px 3px 2px 3px;
 
 }
 
@@ -278,7 +296,6 @@ footer h4 {
 
 .whatsapp {
 
-    /*background-color: #7ACC72; /* Green */
     display: flex;
     border: none;
     cursor: pointer;
@@ -287,6 +304,12 @@ footer h4 {
     justify-content: right;
     bottom: 30%;
     right: 0.5%;
+}
+
+.whatsapp img {
+
+    width: 45px;
+    height: 45px;
 }
 
 
@@ -407,7 +430,7 @@ footer h4 {
 
 .contactForm {
     width: max-content;
-    margin: 30px;
+    margin: 1em;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -431,31 +454,80 @@ footer h4 {
 
 /*Planes*/
 
-/* .gridMain {
+.gridMain {
 
     min-height: calc(100vh-51.6-180.8);
-} 
-*/
+    margin: 20px;
+    top: auto;
+}
+
 
 /*Media Queries*/
 
 @media screen and (max-width: 768px) {
 
-  
+
     .mainPresentation {
 
-        display: flex;
-        flex-direction: column;
+        display: grid;
         align-content: stretch;
         grid-template-columns: 1;
         grid-template-areas:
             "foto"
             "texto"
             "article";
-        background-color: aquamarine;
     }
 
-    /* .mainPresentation img {
-        display: none;
-    } */
+}
+
+@media screen and (max-width: 480px) {
+
+    .menuPrincipal {
+        flex-direction: column;
+        align-items: left;
+        align-content: left;
+        align-self: left;
+    }
+
+    .mainPresentation {
+
+        display: grid;
+        align-content: stretch;
+        grid-template-columns: 1;
+        grid-template-areas:
+            "foto"
+            "texto"
+            "article";
+    }
+
+    .mainPresentation img {
+        min-width: 300px;
+        width: 350px;
+    }
+
+    .firstText {
+        margin: 10px;
+    }
+
+    .mainVideo {
+        margin-left: 0.5em;
+        width: 480px;
+        height: 270px;
+    }
+
+    .redesSociales{
+        margin: 0.5em;
+    }
+    .piePaginaSocial{
+        flex-direction: column;
+        margin: auto;
+        padding: 1px;
+    }
+    .piePaginaDir{
+        flex-direction: column;
+    }
+    .piePaginaCopy{
+        max-width: 480px;
+        font-size: x-small;
+    }
 }
