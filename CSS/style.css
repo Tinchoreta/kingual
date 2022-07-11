@@ -461,11 +461,11 @@ footer h4 {
     top: auto;
 }
 
+/*Lecciones*/
 
 /*Media Queries*/
 
 @media screen and (max-width: 768px) {
-
 
     .mainPresentation {
 
@@ -482,12 +482,18 @@ footer h4 {
 
 @media screen and (max-width: 480px) {
 
-    .menuPrincipal {
+    header{
+        grid-template-columns: 1fr;
+        grid-auto-flow: dense;
+        grid-auto-rows: min-content;
+    }
+
+    /* .menuPrincipal {
         flex-direction: column;
         align-items: left;
         align-content: left;
         align-self: left;
-    }
+    } */
 
     .mainPresentation {
 
@@ -518,11 +524,17 @@ footer h4 {
     .redesSociales{
         margin: 0.5em;
     }
-    .piePaginaSocial{
+    /* .piePaginaSocial{
         flex-direction: column;
         margin: auto;
         padding: 1px;
+    } */
+    
+    .footer{
+        grid-template-columns: 1;
+        grid-auto-flow: column;
     }
+
     .piePaginaDir{
         flex-direction: column;
     }
