@@ -10,11 +10,11 @@
 header {
 
     background-color: rgb(0, 119, 182);
-    background: rgb(3,4,94);
-background: -moz-linear-gradient(90deg, rgba(3,4,94,1) 0%, rgba(0,0,0,1) 21%, rgba(0,180,216,1) 55%);
-background: -webkit-linear-gradient(90deg, rgba(3,4,94,1) 0%, rgba(0,0,0,1) 21%, rgba(0,180,216,1) 55%);
-background: linear-gradient(90deg, rgba(3,4,94,1) 0%, rgba(0,0,0,1) 21%, rgba(0,180,216,1) 55%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#03045e",endColorstr="#00b4d8",GradientType=1);
+    background: rgb(3, 4, 94);
+    background: -moz-linear-gradient(90deg, rgba(3, 4, 94, 1) 0%, rgba(0, 0, 0, 1) 21%, rgba(0, 180, 216, 1) 55%);
+    background: -webkit-linear-gradient(90deg, rgba(3, 4, 94, 1) 0%, rgba(0, 0, 0, 1) 21%, rgba(0, 180, 216, 1) 55%);
+    background: linear-gradient(90deg, rgba(3, 4, 94, 1) 0%, rgba(0, 0, 0, 1) 21%, rgba(0, 180, 216, 1) 55%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#03045e", endColorstr="#00b4d8", GradientType=1);
     object-fit: fill;
     font-size: medium;
     position: sticky;
@@ -238,7 +238,7 @@ footer {
     display: inline-block;
     margin: 0.5em;
     align-self: center;
-    
+
 }
 
 .piePaginaSocial__Item img {
@@ -528,7 +528,8 @@ main ul div img {
 /*Media Queries*/
 
 @media screen and (max-width: 768px) {
-/*Index*/
+
+    /*Index*/
     .mainPresentation {
 
         display: grid;
@@ -540,7 +541,7 @@ main ul div img {
             "article";
     }
 
-/*Lecciones*/
+    /*Lecciones*/
     main ul div {
         justify-content: center;
         align-items: baseline;
@@ -552,7 +553,7 @@ main ul div img {
 
     /*Contacto*/
 
-    .contactForm{
+    .contactForm {
         grid-template-columns: 1fr;
     }
 
