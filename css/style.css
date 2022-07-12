@@ -10,6 +10,8 @@
 header {
 
     background-color: rgb(0, 119, 182);
+    background-image: url(../images/stacked-waves-haikei.svg);
+    object-fit: fill;
     font-size: medium;
     position: sticky;
     min-height: min-content;
@@ -186,6 +188,8 @@ article ol {
 
 footer {
     background-color: #00B4D8;
+    background-image: url(../images/stacked-waves-haikei.svg);
+    object-fit: fill;
     display: grid;
     align-content: stretch;
     justify-content: center;
