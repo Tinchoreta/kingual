@@ -201,6 +201,7 @@ footer {
     flex-direction: column;
     padding-left: 0.5em;
     text-decoration: none;
+    list-style: none;
     grid-area: redes;
 
 }
