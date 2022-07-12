@@ -10,7 +10,11 @@
 header {
 
     background-color: rgb(0, 119, 182);
-    background-image: url(../images/stacked-waves-haikei.svg);
+    background: rgb(3,4,94);
+background: -moz-linear-gradient(90deg, rgba(3,4,94,1) 0%, rgba(0,0,0,1) 21%, rgba(0,180,216,1) 55%);
+background: -webkit-linear-gradient(90deg, rgba(3,4,94,1) 0%, rgba(0,0,0,1) 21%, rgba(0,180,216,1) 55%);
+background: linear-gradient(90deg, rgba(3,4,94,1) 0%, rgba(0,0,0,1) 21%, rgba(0,180,216,1) 55%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#03045e",endColorstr="#00b4d8",GradientType=1);
     object-fit: fill;
     font-size: medium;
     position: sticky;
@@ -75,6 +79,11 @@ nav ul li a {
     font-size: medium;
 }
 
+.menuPrincipal__item:hover {
+    transition: all 1ms;
+    transform: scale(1.1);
+}
+
 .menuPrincipal__item a {
     text-decoration: none;
     align-content: center;
@@ -88,6 +97,10 @@ nav ul li a {
     text-align: center;
     font-size: xx-large;
     margin-top: .3em;
+    color: #CAF0F8;
+    text-decoration: solid;
+    text-shadow: #03045E;
+    text-decoration-color: #0077B6;
 }
 
 .titulosSecundarios {
