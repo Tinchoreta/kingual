@@ -19,6 +19,8 @@ header {
     align-content: start;
     justify-content: start;
     grid-template-columns: repeat(2, 1fr);
+    grid-auto-columns: min-content;
+    grid-auto-rows: min-content;
 }
 
 header a {
@@ -52,7 +54,7 @@ nav ul li a {
     text-decoration: none;
     list-style: none;
     padding: 3px;
-
+    flex-wrap: wrap;
 }
 
 
@@ -83,7 +85,7 @@ nav ul li a {
 .titulos {
     text-align: center;
     font-size: xx-large;
-    margin-top: .5em;
+    margin-top: .3em;
 }
 
 .titulosSecundarios {
@@ -411,6 +413,26 @@ footer {
 /*Contacto*/
 
 .contactForm {
+    margin: 1em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: start;
+    justify-content: start;
+}
+
+main div h3 {
+    margin: 1em;
+}
+
+main div iframe {
+    margin: 1em;
+}
+
+main div h4 {
+    margin: 1.5em;
+}
+
+.contactFormHtml {
     width: max-content;
     margin: 1em;
     padding: 10px;
@@ -434,15 +456,15 @@ footer {
     align-self: flex-end;
 }
 
-/*Planes*/
-
-.gridMain {
-
-    min-height: calc(100vh-51.6-180.8);
-    margin: 20px;
-    top: auto;
+.aviso {
+    justify-content: baseline;
 }
 
+.text8_mensaje {
+    width: 3em;
+}
+
+/*Planes*/
 /*Lecciones*/
 
 main ul {
@@ -485,7 +507,7 @@ main ul div img {
 /*Media Queries*/
 
 @media screen and (max-width: 768px) {
-
+/*Index*/
     .mainPresentation {
 
         display: grid;
@@ -495,6 +517,16 @@ main ul div img {
             "foto"
             "texto"
             "article";
+    }
+
+/*Lecciones*/
+    main ul div {
+        justify-content: center;
+        align-items: baseline;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-flow: row;
+        list-style-type: georgian;
     }
 
 }
