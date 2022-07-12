@@ -213,13 +213,14 @@ footer {
     border: solid 3px #0077B6;
     border-radius: 6px;
     background: whitesmoke;
+    text-decoration: none;
 }
 
 .piePaginaSocial__Item {
     display: inline-block;
     margin: 0.5em;
     align-self: center;
-    text-decoration: none;
+    
 }
 
 .piePaginaSocial__Item img {
