@@ -185,7 +185,7 @@ article ol {
 footer {
     background-color: #00B4D8;
     display: grid;
-    align-content:stretch;
+    align-content: stretch;
     justify-content: center;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas: "redes none none direcciones"
@@ -197,7 +197,6 @@ footer {
 
     display: flex;
     flex-direction: column;
-    /* justify-content: left ; */
     padding-left: 0.5em;
     text-decoration: none;
     grid-area: redes;
@@ -206,8 +205,6 @@ footer {
 
 .piePaginaSocial {
     display: flex;
-    /* justify-content: left;
-    align-items: center; */
     margin: 1em auto;
     padding-left: 1em;
     text-decoration: none;
@@ -452,38 +449,39 @@ main ul {
     margin: 2em;
 }
 
-main ul li
-{
+main ul li {
     margin: 1em;
     text-decoration: underline;
 
 }
 
-main ul div{
+main ul div {
     justify-content: center;
-    align-items:baseline;
+    align-items: baseline;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-flow: row;
-    
-    list-style-type:georgian;
+
+    list-style-type: georgian;
 }
 
-main ul div p{
+main ul div p {
 
     margin: 1em;
 }
-main ul div img{
+
+main ul div img {
     margin: 1em;
     padding: 0.5em;
     width: 450px;
     height: 350px;
-    object-fit:fill;
-    align-self:flex-start;
+    object-fit: fill;
+    align-self: flex-start;
     border-radius: 6px;
     border: solid #0077B6;
 
 }
+
 /*Media Queries*/
 
 @media screen and (max-width: 768px) {
@@ -503,9 +501,9 @@ main ul div img{
 
 @media screen and (max-width: 480px) {
 
-    header{
+    header {
         grid-template-columns: 1fr;
-        grid-auto-flow:column;
+        grid-auto-flow: column;
         grid-auto-rows: min-content;
     }
 
@@ -535,24 +533,20 @@ main ul div img{
         height: 270px;
     }
 
-    .redesSociales{
+    .redesSociales {
         margin: 0.5em;
     }
-    /* .piePaginaSocial{
-        flex-direction: column;
-        margin: auto;
-        padding: 1px;
-    } */
-    
-    .footer{
+
+    .footer {
         grid-template-columns: 1;
         grid-auto-flow: column;
     }
 
-    .piePaginaDir{
+    .piePaginaDir {
         flex-direction: column;
     }
-    .piePaginaCopy{
+
+    .piePaginaCopy {
         max-width: 480px;
         font-size: x-small;
     }
