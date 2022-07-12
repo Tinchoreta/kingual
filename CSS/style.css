@@ -64,7 +64,7 @@ nav ul li a {
     align-content: center;
     margin: 2px;
     padding: 6px;
-    border: solid 2px #03045E;
+    border: solid 2px #0077B6;
     border-radius: 6px;
     background: whitesmoke;
     font-weight: 500;
@@ -185,9 +185,8 @@ article ol {
 footer {
     background-color: #00B4D8;
     display: grid;
-    align-content: space-between;
+    align-content:stretch;
     justify-content: center;
-    /* grid-template-columns: repeat(3,1fr); */
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas: "redes none none direcciones"
         "copyright copyright copyright copyright"
@@ -198,37 +197,23 @@ footer {
 
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    /* justify-content: left ; */
     padding-left: 0.5em;
-    /* min-width: min-content;
-    max-width: max-content; */
     text-decoration: none;
     grid-area: redes;
 
 }
 
-.redesSociales h4 {
-
-    font-size: small;
-}
-
-footer h4 {
-    margin-top: 10px;
-    padding-left: 10px;
-    font-size: larger;
-}
-
 .piePaginaSocial {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px auto;
-    padding-left: 10px;
+    /* justify-content: left;
+    align-items: center; */
+    margin: 1em auto;
+    padding-left: 1em;
     text-decoration: none;
-    border: solid 3px #03045E;
+    border: solid 3px #0077B6;
     border-radius: 6px;
     background: whitesmoke;
-
 }
 
 .piePaginaSocial__Item {
@@ -261,7 +246,7 @@ footer h4 {
     align-items: flex-end;
     text-decoration: none;
     list-style-type: none;
-    border: solid 3px #03045E;
+    border: solid 3px #0077B6;
     border-radius: 6px;
     background: whitesmoke;
     font-weight: 300;
@@ -463,6 +448,42 @@ footer h4 {
 
 /*Lecciones*/
 
+main ul {
+    margin: 2em;
+}
+
+main ul li
+{
+    margin: 1em;
+    text-decoration: underline;
+
+}
+
+main ul div{
+    justify-content: center;
+    align-items:baseline;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: row;
+    
+    list-style-type:georgian;
+}
+
+main ul div p{
+
+    margin: 1em;
+}
+main ul div img{
+    margin: 1em;
+    padding: 0.5em;
+    width: 450px;
+    height: 350px;
+    object-fit:fill;
+    align-self:flex-start;
+    border-radius: 6px;
+    border: solid #0077B6;
+
+}
 /*Media Queries*/
 
 @media screen and (max-width: 768px) {
