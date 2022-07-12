@@ -418,18 +418,20 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     align-content: start;
     justify-content: start;
+    grid-auto-columns: min-content;
+    grid-auto-rows: min-content;
 }
 
-main div h3 {
+main h3 {
     margin: 1em;
+}
+
+main h4 {
+    margin: 1.5em;
 }
 
 main div iframe {
     margin: 1em;
-}
-
-main div h4 {
-    margin: 1.5em;
 }
 
 .contactFormHtml {
@@ -527,6 +529,12 @@ main ul div img {
         grid-template-columns: repeat(1, 1fr);
         grid-auto-flow: row;
         list-style-type: georgian;
+    }
+
+    /*Contacto*/
+
+    .contactForm{
+        grid-template-columns: 1fr;
     }
 
 }
