@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Tinchoreta/kingual/issues"
   },
-  "homepage": "https://github.com/Tinchoreta/kingual#readme"
+  "homepage": "https://github.com/Tinchoreta/kingual#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
 }
