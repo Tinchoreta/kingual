@@ -367,7 +367,7 @@ footer {
     overflow: hidden;
     transition: .5s;
     margin: 15px 20px;
-    display: inline-table;
+    display: inline-block;
 }
 
 .card:hover {
