@@ -236,6 +236,9 @@ footer {
     grid-template-areas: "redes none none direcciones"
         "copyright copyright copyright copyright"
     ;
+    width: 100vh;
+    min-width:fit-content;
+    
 }
 
 .redesSociales {
