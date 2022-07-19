@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Baloo 2', cursive;
     /* font-weight: 200; */
 }
@@ -12,9 +13,9 @@ header {
 
     background-color: rgb(0, 119, 182);
     background: rgb(3, 4, 94);
-    background: -moz-linear-gradient(90deg, rgba(3, 4, 94, 1) 0%, rgba(0,119, 182, 1) 21%, rgba(0, 180, 216, 1) 55%);
-    background: -webkit-linear-gradient(90deg, rgba(3, 4, 94, 1) 0%,rgba(0,119, 182, 1) 21%, rgba(0, 180, 216, 1) 55%);
-    background: linear-gradient(90deg, rgba(3, 4, 94, 1) 0%, rgba(0,119, 182, 1) 21%, rgba(0, 180, 216, 1) 55%);
+    background: -moz-linear-gradient(90deg, rgba(3, 4, 94, 1) 0%, rgba(0, 119, 182, 1) 21%, rgba(0, 180, 216, 1) 55%);
+    background: -webkit-linear-gradient(90deg, rgba(3, 4, 94, 1) 0%, rgba(0, 119, 182, 1) 21%, rgba(0, 180, 216, 1) 55%);
+    background: linear-gradient(90deg, rgba(3, 4, 94, 1) 0%, rgba(0, 119, 182, 1) 21%, rgba(0, 180, 216, 1) 55%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#03045e", endColorstr="#00b4d8", GradientType=1);
     object-fit: fill;
     font-size: medium;
@@ -64,9 +65,10 @@ nav ul li a {
     flex-wrap: wrap;
 }
 
-.navbar{
+.navbar {
     border-radius: 6px;
 }
+
 .menuPrincipal__item {
 
     align-items: center;
@@ -108,7 +110,7 @@ nav ul li a {
 
 .titulosSecundarios {
     text-align: center;
-    font-size:xx-large;
+    font-size: xx-large;
     margin-left: 0.5em;
     margin-top: 0.5em;
     color: #0077B6;
@@ -118,7 +120,7 @@ nav ul li a {
 
 .titulosSecundarios2 {
     text-align: center;
-    font-size:xx-large;
+    font-size: xx-large;
     margin-left: 0.5em;
     margin-top: 0.5em;
     color: #0077B6;
@@ -144,10 +146,11 @@ nav ul li a {
     padding: 10px;
 }
 
-body{
+body {
     background-color: #f6f9f9;
     background-image: url("data:image/svg+xml,%3Csvg width='12' height='16' viewBox='0 0 12 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 .99C4 .445 4.444 0 5 0c.552 0 1 .45 1 .99v4.02C6 5.555 5.556 6 5 6c-.552 0-1-.45-1-.99V.99zm6 8c0-.546.444-.99 1-.99.552 0 1 .45 1 .99v4.02c0 .546-.444.99-1 .99-.552 0-1-.45-1-.99V8.99z' fill='%23a8b3c1' fill-opacity='0.17' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
+
 .seccionMain {
     margin: 10px;
     padding: 10px;
@@ -155,7 +158,7 @@ body{
 
 
 
-main ul{
+main ul {
     list-style: none;
 }
 
@@ -228,17 +231,17 @@ article ol {
 footer {
     background-color: #00B4D8;
     background-image: url(../images/stacked-waves-haikei.svg);
-    object-fit: fill;
+    object-fit: cover;
     display: grid;
+    grid-auto-rows: min-content;
     align-content: stretch;
     justify-content: center;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas: "redes none none direcciones"
         "copyright copyright copyright copyright"
     ;
-    width: 100vh;
-    min-width:fit-content;
-    
+    min-width: fit-content;
+    max-width: 100%;
 }
 
 .redesSociales {
@@ -334,7 +337,7 @@ footer {
     align-items: flex-end;
     position: fixed;
     justify-content: right;
-    bottom: 20%;
+    bottom: 25%;
     right: 0.5%;
 }
 
@@ -585,6 +588,20 @@ main ul div img {
         grid-template-columns: 1fr;
     }
 
+    /*Footer*/
+    .piePaginaCopy p {
+        font-size: small;
+    }
+
+    .piePaginaDir__List {
+        font-size: small;
+    }
+
+    .piePaginaCopy {
+        max-width: 100%;
+        font-size: small;
+        word-wrap: break-word;
+            }
 }
 
 @media screen and (max-width: 480px) {
@@ -623,19 +640,24 @@ main ul div img {
 
     .redesSociales {
         margin: 0.5em;
-    }
 
+    }
+ 
     .footer {
-        grid-template-columns: 1;
-        grid-auto-flow: column;
+        clear:both;
+        overflow: scroll;
     }
 
     .piePaginaDir {
-        flex-direction: column;
+        overflow: visible;
+    } 
+    
+    .piePaginaDir__List {
+        font-size: xx-small;
     }
 
     .piePaginaCopy {
-        max-width: 480px;
-        font-size: x-small;
+        font-size:smaller;
+        word-wrap: break-word;
     }
 }
