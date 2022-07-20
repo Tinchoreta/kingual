@@ -67,6 +67,7 @@ nav ul li a {
 
 .navbar {
     border-radius: 6px;
+    background-color: #00B4D8;
 }
 
 .menuPrincipal__item {
@@ -120,10 +121,20 @@ nav ul li a {
 
 .titulosSecundarios2 {
     text-align: center;
-    font-size: xx-large;
+    font-size: 2.5em;
     margin-left: 0.5em;
     margin-top: 0.5em;
     color: #0077B6;
+    text-decoration: solid;
+    text-shadow: #03045E;
+}
+
+.titulosSecundarios3 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+    color: black;
     text-decoration: solid;
     text-shadow: #03045E;
 }
@@ -152,8 +163,8 @@ body {
 }
 
 .seccionMain {
-    margin: 10px;
-    padding: 10px;
+    margin: 5px;
+    padding: 5px;
 }
 
 
@@ -163,12 +174,13 @@ main ul {
 }
 
 .mainPresentation {
-    margin: 10px;
-    padding: 10px;
+    margin: 5px;
+    padding: 5px;
     width: 90%;
     justify-content: start;
     align-content: start;
     display: grid;
+    
     grid-template-columns: repeat(3, minmax(min-content, max-content));
     grid-template-areas:
         "foto texto"
@@ -178,7 +190,7 @@ main ul {
 .mainPresentation img {
 
     margin: 0px;
-    padding: 15px;
+    padding: 10px;
     height: 400px;
     width: 400px;
     object-fit: contain;
@@ -188,7 +200,7 @@ main ul {
 
 .firstText {
 
-    margin: 75px 10px 10px 0px;
+    margin: 15px 10px 10px 0px;
     padding: 5px;
     grid-area: texto;
 }
@@ -235,7 +247,7 @@ footer {
     display: grid;
     grid-auto-rows: min-content;
     align-content: stretch;
-    justify-content: center;
+    justify-content:start;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas: "redes none none direcciones"
         "copyright copyright copyright copyright"
@@ -248,6 +260,8 @@ footer {
 
     display: flex;
     flex-direction: column;
+    align-self: flex-start;
+    align-items:baseline;
     padding-left: 0.5em;
     text-decoration: none;
     list-style: none;
@@ -257,8 +271,8 @@ footer {
 
 .piePaginaSocial {
     display: flex;
-    margin: 1em auto;
-    padding-left: 1em;
+    margin-top: 0.7em;
+    padding-left: 0.5em;
     text-decoration: none;
     border: solid 3px #0077B6;
     border-radius: 6px;
@@ -312,9 +326,9 @@ footer {
 
 .piePaginaCopy {
     background-color: #0077b6;
-
     display: flex;
     align-items: center;
+    align-self: center;
     justify-content: center;
     grid-area: copyright;
 }
@@ -324,9 +338,9 @@ footer {
     text-shadow: #03045E;
     color: #CAF0F8;
     text-decoration-color: #03045E;
-    align-items: center;
+    align-self: center;
     justify-content: center;
-    font: 100 #CAF0F8;
+    font-size: 1em;
 }
 
 .whatsapp {
@@ -615,7 +629,7 @@ main ul div img {
     .mainPresentation {
 
         display: grid;
-        align-content: stretch;
+        align-content:flex-start;
         grid-template-columns: 1;
         grid-template-areas:
             "foto"
@@ -624,8 +638,9 @@ main ul div img {
     }
 
     .mainPresentation img {
-        min-width: 300px;
-        width: 350px;
+        min-width: 200px;
+        width: 250px;
+        height: 250px;
     }
 
     .firstText {
