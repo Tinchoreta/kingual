@@ -364,8 +364,13 @@ footer {
 
 /*Staff*/
 
+.headerStaff{
+    z-index: 100000;
+}
+
 .body {
     background-color: rgba(14, 44, 23, 36);
+    z-index: 10000;
 }
 
 
@@ -433,16 +438,18 @@ footer {
 .card .description {
     height: 200px;
     padding: 40px 20px 20px 20px;
-    border-bottom: solid 1px rgba(6, 74, 76, .18);
+    border-bottom: solid 1px #03045E;
     text-align: center;
+    
 }
 
 .card .description h3 {
-    color: #05383a;
+    color: #03045E;
 }
 
 .card .description h4 {
     color: #0077B6;
+    font-size: large;
 }
 
 .card .description p {
@@ -476,14 +483,17 @@ footer {
 
 /*Contacto*/
 
+.contenedorForm{
+    display: flex;
+    flex-direction: column;
+}
+
 .contactForm {
     margin: 1em;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-content: start;
     justify-content: start;
-    grid-auto-columns: min-content;
-    grid-auto-rows: min-content;
 }
 
 main h3 {
@@ -491,12 +501,13 @@ main h3 {
 }
 
 main h4 {
-    margin: 1.5em;
+    margin-left: 1.5em;
 }
 
 main div iframe {
     margin: 1em;
 }
+
 
 .contactFormHtml {
     width: max-content;
@@ -518,18 +529,20 @@ main div iframe {
 
 .contactForm button {
     margin-right: 15px;
-    width: fit-content;
+    width: 100px;
+    height: 35px;
     align-self: flex-end;
 }
 
-.aviso {
+.avisoCamposObligatorios {
     justify-content: baseline;
 }
 
-.text8_mensaje {
-    width: 3em;
+.direccionContacto{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5em;
 }
-
 /*Planes*/
 /*Lecciones*/
 
@@ -569,6 +582,8 @@ main ul div img {
     border: solid #0077B6;
 
 }
+
+
 
 /*Media Queries*/
 
