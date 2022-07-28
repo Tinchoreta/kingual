@@ -245,12 +245,12 @@ footer {
     background-image: url(../images/stacked-waves-haikei.svg);
     object-fit: cover;
     display: grid;
-    grid-auto-rows: min-content;
+    grid-auto-rows:max-content;
     align-content: stretch;
     justify-content:start;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-areas: "redes none none direcciones"
-        "copyright copyright copyright copyright"
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "redes none direcciones"
+        "copyright copyright copyright"
     ;
     min-width: fit-content;
     max-width: 100%;
@@ -352,7 +352,7 @@ footer {
     position: fixed;
     justify-content: right;
     bottom: 25%;
-    right: 0.5%;
+    right: 5%;
 }
 
 .whatsapp img {
@@ -676,6 +676,7 @@ main ul div img {
     .footer {
         clear:both;
         overflow: scroll;
+        grid-auto-rows: minmax(250px, auto);
         grid-template-columns: 1;
     }
 
@@ -690,7 +691,26 @@ main ul div img {
     }
 
     .piePaginaCopy {
-        font-size:smaller;
+        font-size:xx-small;
         word-wrap: break-word;
+    }
+
+
+    .whatsapp {
+
+        display: flex;
+        border: none;
+        cursor: pointer;
+        align-items: flex-end;
+        position: fixed;
+        justify-content: right;
+        bottom: 20%;
+        right: 8%;
+    }
+    
+    .whatsapp img {
+    
+        width: 35px;
+        height: 35px;
     }
 }
