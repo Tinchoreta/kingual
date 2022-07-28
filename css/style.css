@@ -676,14 +676,17 @@ main ul div img {
     .footer {
         clear:both;
         overflow: scroll;
+        grid-template-columns: 1;
     }
 
     .piePaginaDir {
         overflow: visible;
+        flex-direction: row;
     } 
     
     .piePaginaDir__List {
         font-size: xx-small;
+        flex-direction: row;
     }
 
     .piePaginaCopy {
