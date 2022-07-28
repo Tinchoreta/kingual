@@ -351,7 +351,7 @@ footer {
     align-items: flex-end;
     position: fixed;
     justify-content: right;
-    bottom: 25%;
+    bottom: 15%;
     right: 5%;
 }
 
@@ -505,7 +505,7 @@ main ul div img {
     footer {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
     }
 
     .piePaginaCopy p {
@@ -513,7 +513,7 @@ main ul div img {
     }
 
     .piePaginaDir {
-        overflow: visible;
+        
         display: flex;
         flex-direction: row;
         
@@ -528,7 +528,23 @@ main ul div img {
         font-size: small;
         word-wrap: break-word;
     }
+    .whatsapp {
 
+        display: flex;
+        border: none;
+        cursor: pointer;
+        align-items: flex-end;
+        position: fixed;
+        justify-content: right;
+        bottom: 5%;
+        right: 7%;
+    }
+    
+    .whatsapp img {
+    
+        width: 35px;
+        height: 35px;
+    }
 
 }
 
@@ -607,7 +623,7 @@ main ul div img {
         position: fixed;
         justify-content: right;
         bottom: 20%;
-        right: 5%;
+        right: 10%;
     }
     
     .whatsapp img {
