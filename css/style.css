@@ -160,6 +160,7 @@ nav ul li a {
 body {
     background-color: #f6f9f9;
     background-image: url("data:image/svg+xml,%3Csvg width='12' height='16' viewBox='0 0 12 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 .99C4 .445 4.444 0 5 0c.552 0 1 .45 1 .99v4.02C6 5.555 5.556 6 5 6c-.552 0-1-.45-1-.99V.99zm6 8c0-.546.444-.99 1-.99.552 0 1 .45 1 .99v4.02c0 .546-.444.99-1 .99-.552 0-1-.45-1-.99V8.99z' fill='%23a8b3c1' fill-opacity='0.17' fill-rule='evenodd'/%3E%3C/svg%3E");
+    
 }
 
 .seccionMain {
@@ -252,8 +253,7 @@ footer {
     grid-template-areas: "redes none direcciones"
         "copyright copyright copyright"
     ;
-    min-width: fit-content;
-    max-width: 100%;
+    width: 100%;
 }
 
 .redesSociales {
@@ -618,19 +618,35 @@ main ul div img {
     }
 
     /*Footer*/
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
     .piePaginaCopy p {
         font-size: small;
     }
+
+    .piePaginaDir {
+        overflow: visible;
+        display: flex;
+        flex-direction: row;
+        
+    } 
 
     .piePaginaDir__List {
         font-size: small;
     }
 
     .piePaginaCopy {
-        max-width: 100%;
+        width: 100%;
         font-size: small;
         word-wrap: break-word;
-            }
+    }
+
+
 }
 
 @media screen and (max-width: 480px) {
@@ -673,16 +689,17 @@ main ul div img {
 
     }
  
-    .footer {
-        clear:both;
-        overflow: scroll;
-        grid-auto-rows: minmax(250px, auto);
-        grid-template-columns: 1;
+    footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     .piePaginaDir {
         overflow: visible;
+        display: flex;
         flex-direction: row;
+
     } 
     
     .piePaginaDir__List {
@@ -691,6 +708,8 @@ main ul div img {
     }
 
     .piePaginaCopy {
+        /* position: absolute;
+        bottom: 100%; */
         font-size:xx-small;
         word-wrap: break-word;
     }
@@ -705,7 +724,7 @@ main ul div img {
         position: fixed;
         justify-content: right;
         bottom: 20%;
-        right: 8%;
+        right: 5%;
     }
     
     .whatsapp img {
