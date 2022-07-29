@@ -136,6 +136,11 @@ nav ul li a {
   margin: 30px;
   padding: 10px; }
 
+.titulos, .titulosSecundarios, .titulosSecundarios2, .titulosSecundarios3 {
+  text-align: center;
+  text-decoration: solid;
+  text-shadow: #03045E; }
+
 header {
   background-color: #0077b6;
   background: #03045e;
@@ -163,8 +168,8 @@ header a {
   align-self: center; }
 
 nav {
-  justify-self: end;
-  align-self: end; }
+  align-self: end;
+  justify-self: end; }
 
 nav ul li a {
   align-items: center;
@@ -218,35 +223,25 @@ nav ul li a {
   font-size: xx-large;
   margin-top: .3em;
   color: #CAF0F8;
-  text-shadow: #03045E;
   text-decoration-color: #0077B6; }
 
 .titulosSecundarios {
-  text-align: center;
   font-size: xx-large;
   margin-left: 0.5em;
   margin-top: 0.5em;
-  color: #0077B6;
-  text-decoration: solid;
-  text-shadow: #03045E; }
+  color: #0077B6; }
 
 .titulosSecundarios2 {
-  text-align: center;
   font-size: 2.5em;
   margin-left: 0.5em;
   margin-top: 0.5em;
-  color: #0077B6;
-  text-decoration: solid;
-  text-shadow: #03045E; }
+  color: #0077B6; }
 
 .titulosSecundarios3 {
-  text-align: center;
   font-size: 1.5em;
   margin-left: 0.5em;
   margin-top: 0.5em;
-  color: black;
-  text-decoration: solid;
-  text-shadow: #03045E; }
+  color: black; }
 
 .cabecera {
   background-color: #0077b6;
@@ -410,81 +405,7 @@ article ol {
 footer {
   background-color: #00B4D8;
   background-image: url(../images/stacked-waves-haikei.svg);
-  object-fit: cover;
-  display: grid;
-  grid-auto-rows: min-content;
-  align-content: stretch;
-  justify-content: start;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-areas: "redes none none direcciones" "copyright copyright copyright copyright";
-  min-width: fit-content;
-  max-width: 100%; }
-
-.redesSociales {
-  display: flex;
-  flex-direction: column;
-  align-self: flex-start;
-  align-items: baseline;
-  padding-left: 0.5em;
-  text-decoration: none;
-  list-style: none;
-  grid-area: redes; }
-
-.piePaginaSocial {
-  display: flex;
-  margin-top: 0.7em;
-  padding-left: 0.5em;
-  text-decoration: none;
-  border: solid 3px #0077B6;
-  border-radius: 6px;
-  background: whitesmoke;
-  text-decoration: none; }
-  .piePaginaSocial__Item {
-    display: inline-block;
-    margin: 0.5em;
-    align-self: center; }
-  .piePaginaSocial__Item img {
-    width: 30px;
-    object-fit: contain; }
-
-.piePaginaDir {
-  margin: 10px auto;
-  margin-right: 15px;
-  display: flex;
-  align-self: end;
-  align-items: flex-end;
-  text-decoration: none;
-  justify-content: right;
-  grid-area: direcciones; }
-  .piePaginaDir__List {
-    margin: 2px;
-    padding: 2px;
-    align-items: flex-end;
-    text-decoration: none;
-    list-style-type: none;
-    border: solid 3px #0077B6;
-    border-radius: 6px;
-    background: whitesmoke;
-    font-weight: 300;
-    font-size: small; }
-  .piePaginaDir__List__Item {
-    margin: 2px;
-    padding: 2px 3px 2px 3px; }
-
-.piePaginaCopy {
-  background-color: #0077B6;
-  display: flex;
-  align-items: center;
-  align-self: center;
-  justify-content: center;
-  grid-area: copyright; }
-  .piePaginaCopy p {
-    text-shadow: #03045E;
-    color: #CAF0F8;
-    text-decoration-color: #03045E;
-    align-self: center;
-    justify-content: center;
-    font-size: 1em; }
+  object-fit: cover; }
 
 .whatsapp {
   display: flex;
@@ -493,8 +414,13 @@ footer {
   align-items: flex-end;
   position: fixed;
   justify-content: right;
-  bottom: 25%;
+  bottom: 15%;
   right: 5%; }
   .whatsapp img {
     width: 45px;
     height: 45px; }
+
+.titulos, .titulosSecundarios, .titulosSecundarios2, .titulosSecundarios3 {
+  text-align: center;
+  text-decoration: solid;
+  text-shadow: #03045E; }

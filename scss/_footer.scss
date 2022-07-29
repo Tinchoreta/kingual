@@ -2,106 +2,8 @@ footer {
     background-color: $color-principal-normal;
     background-image: url(../images/stacked-waves-haikei.svg);
     object-fit: cover;
-    display: grid;
-    grid-auto-rows: min-content;
-    align-content: stretch;
-    justify-content:start;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-areas: "redes none none direcciones"
-        "copyright copyright copyright copyright"
-    ;
-    min-width: fit-content;
-    max-width: 100%;
 }
 
-.redesSociales {
-
-    display: flex;
-    flex-direction: column;
-    align-self: flex-start;
-    align-items:baseline;
-    padding-left: 0.5em;
-    text-decoration: none;
-    list-style: none;
-    grid-area: redes;
-
-}
-
-
-.piePaginaSocial {
-    display: flex;
-    margin-top: 0.7em;
-    padding-left: 0.5em;
-    text-decoration: none;
-    border: solid 3px $color-principal-fuerte;
-    border-radius: 6px;
-    background: whitesmoke;
-    text-decoration: none;
-
-    &__Item {
-        display: inline-block;
-        margin: 0.5em;
-        align-self: center;
-    
-    }
-
-    &__Item img {
-        width: 30px;
-        object-fit: contain;
-    }
-}
-
-.piePaginaDir {
-    margin: 10px auto;
-    margin-right: 15px;
-    display: flex;
-    align-self: end;
-    align-items: flex-end;
-    text-decoration: none;
-    justify-content: right;
-    grid-area: direcciones;
-
-    &__List {
-        margin: 2px;
-        padding: 2px;
-        align-items: flex-end;
-        text-decoration: none;
-        list-style-type: none;
-        border: solid 3px $color-principal-fuerte;
-        border-radius: 6px;
-        background: whitesmoke;
-        font-weight: 300;
-        font-size: small;
-    }
-
-    &__List__Item {
-
-        margin: 2px;
-        padding: 2px 3px 2px 3px;
-    
-    }
-}
-
-
-.piePaginaCopy {
-    background-color: $color-principal-fuerte;
-    display: flex;
-    align-items: center;
-    align-self: center;
-    justify-content: center;
-    grid-area: copyright;
-
-    & p {
-
-        text-shadow: $color-principal-muy-fuerte;
-        color: $color-principal-muy-suave;
-        text-decoration-color: $color-principal-muy-fuerte;
-        align-self: center;
-        justify-content: center;
-        font-size: 1em;
-    }
-    
-}
 
 
 .whatsapp {
@@ -112,7 +14,7 @@ footer {
     align-items: flex-end;
     position: fixed;
     justify-content: right;
-    bottom: 25%;
+    bottom: 15%;
     right: 5%;
 
     & img {

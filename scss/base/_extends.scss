@@ -4,3 +4,8 @@
     text-shadow: $color-principal-muy-fuerte;
 }
 
+@mixin AlineaJustifica($align, $justify){
+    align-self: $align;
+    justify-self: $justify;
+}
+

@@ -1,3 +1,5 @@
+@import './base/extends';
+
 header {
 
     background-color: rgb(0, 119, 182);
@@ -28,8 +30,8 @@ header a {
 }
 
 nav {
-    justify-self: end;
-    align-self: end;
+@include AlineaJustifica(end, end)
+
 }
 
 nav ul li a {
