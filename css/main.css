@@ -175,8 +175,8 @@ nav ul li a {
   align-items: center;
   justify-content: center;
   justify-items: center;
-  align-self: center;
-  justify-self: center; }
+  align-self: end;
+  justify-self: end; }
 
 .menuPrincipal {
   margin: 0 auto;
@@ -184,12 +184,13 @@ nav ul li a {
   flex-direction: row;
   align-items: center;
   align-content: center;
-  align-self: center;
   justify-content: center;
   text-decoration: none;
   list-style: none;
   padding: 3px;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  align-self: end;
+  justify-self: end; }
 
 .navbar {
   border-radius: 6px;
@@ -217,7 +218,7 @@ nav ul li a {
   align-content: center; }
 
 .menuPrincipal__item :hover {
-  box-shadow: 0 3px 9px #00b4d8; }
+  box-shadow: 0 3px 9px #00B4D8; }
 
 .titulos {
   font-size: xx-large;
@@ -244,7 +245,7 @@ nav ul li a {
   color: black; }
 
 .cabecera {
-  background-color: #0077b6;
+  background-color: #0077B6;
   display: flex;
   align-self: center;
   justify-content: center;
@@ -254,7 +255,7 @@ nav ul li a {
   padding: 10px; }
 
 .cabecera__item {
-  background-color: #0077b6;
+  background-color: #0077B6;
   text-decoration: none;
   margin: 30px;
   padding: 10px; }
