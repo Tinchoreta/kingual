@@ -245,15 +245,6 @@ footer {
     background-color: #00B4D8;
     background-image: url(../images/stacked-waves-haikei.svg);
     object-fit: cover;
-    display: grid;
-    grid-auto-rows:max-content;
-    align-content: stretch;
-    justify-content:start;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "redes none direcciones"
-        "copyright copyright copyright"
-    ;
-    width: 100%;
 }
 
 .redesSociales {
@@ -502,11 +493,6 @@ main ul div img {
 
     /*Footer*/
 
-    footer {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-    }
 
     .piePaginaCopy p {
         font-size: small;
@@ -588,11 +574,6 @@ main ul div img {
 
     }
  
-    footer {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
 
     .piePaginaDir {
         overflow: visible;
