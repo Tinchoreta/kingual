@@ -491,29 +491,7 @@ main ul div img {
         grid-template-columns: 1fr;
     }
 
-    /*Footer*/
 
-
-    .piePaginaCopy p {
-        font-size: small;
-    }
-
-    .piePaginaDir {
-        
-        display: flex;
-        flex-direction: row;
-        
-    } 
-
-    .piePaginaDir__List {
-        font-size: small;
-    }
-
-    .piePaginaCopy {
-        width: 100%;
-        font-size: small;
-        word-wrap: break-word;
-    }
     .whatsapp {
 
         display: flex;
@@ -569,33 +547,7 @@ main ul div img {
         height: 270px;
     }
 
-    .redesSociales {
-        margin: 0.5em;
-
-    }
- 
-
-    .piePaginaDir {
-        overflow: visible;
-        display: flex;
-        flex-direction: row;
-
-    } 
-    
-    .piePaginaDir__List {
-        font-size: xx-small;
-        flex-direction: row;
-    }
-
-    .piePaginaCopy {
-        /* position: absolute;
-        bottom: 100%; */
-        font-size:xx-small;
-        word-wrap: break-word;
-    }
-
-
-    .whatsapp {
+     .whatsapp {
 
         display: flex;
         border: none;
