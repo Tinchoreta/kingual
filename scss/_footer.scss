@@ -10,12 +10,13 @@ footer {
 
     display: flex;
     border: none;
+    overflow: hidden;
     cursor: pointer;
     align-items: flex-end;
     position: fixed;
     justify-content: right;
-    bottom: 55%;
-    right: 5%;
+    bottom: 5%;
+    right: 3%;
 
     & img {
 
