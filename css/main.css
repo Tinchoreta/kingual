@@ -6,6 +6,11 @@
   font-family: 'Baloo 2', cursive; }
 
 /* Paleta de colores (palette 115 Coolors.co) 03045E (3,4,94) • 0077B6 (0,119,182) • 00B4D8 (0,180,216) • 90E0EF (144,224,239) • CAF0F8 (202,240,248)*/
+.titulos, .titulosSecundarios, .titulosSecundarios2, .titulosSecundarios3 {
+  text-align: center;
+  text-decoration: solid;
+  text-shadow: #03045E; }
+
 header {
   background-color: #0077b6;
   background: #03045e;
@@ -421,7 +426,67 @@ footer {
     width: 45px;
     height: 45px; }
 
-.titulos, .titulosSecundarios, .titulosSecundarios2, .titulosSecundarios3 {
-  text-align: center;
-  text-decoration: solid;
-  text-shadow: #03045E; }
+/*Media Queries*/
+@media screen and (max-width: 768px) {
+  /*Index*/
+  .mainPresentation {
+    display: grid;
+    align-content: stretch;
+    grid-template-columns: 1;
+    grid-template-areas: "foto" "texto" "article"; }
+  /*Lecciones*/
+  main ul div {
+    justify-content: center;
+    align-items: baseline;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-flow: row;
+    list-style-type: georgian; }
+  /*Contacto*/
+  .contactForm {
+    grid-template-columns: 1fr; }
+  .whatsapp {
+    display: flex;
+    border: none;
+    cursor: pointer;
+    align-items: flex-end;
+    position: fixed;
+    justify-content: right;
+    bottom: 5%;
+    right: 7%; }
+  .whatsapp img {
+    width: 35px;
+    height: 35px; } }
+
+@media screen and (max-width: 480px) {
+  header {
+    grid-template-columns: 1fr;
+    grid-auto-flow: column;
+    grid-auto-rows: min-content; }
+  .mainPresentation {
+    display: grid;
+    align-content: flex-start;
+    grid-template-columns: 1;
+    grid-template-areas: "foto" "texto" "article"; }
+  .mainPresentation img {
+    min-width: 200px;
+    width: 250px;
+    height: 250px; }
+  .firstText {
+    margin: 10px; }
+  .mainVideo {
+    margin-left: 0.5em;
+    width: 480px;
+    height: 270px; }
+  .whatsapp {
+    display: flex;
+    border: none;
+    cursor: pointer;
+    align-items: flex-end;
+    position: fixed;
+    justify-content: right;
+    bottom: 20%;
+    right: 10%; }
+  .whatsapp img {
+    width: 35px;
+    height: 35px; } }

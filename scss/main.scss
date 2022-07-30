@@ -1,7 +1,8 @@
 @import 'general';
 @import './base/variables';
+@import './base/extends';
 @import 'header';
 @import 'index';
 @import 'staff';
 @import 'footer';
-@import './base/extends';
+@import './base/mediaQueries';
