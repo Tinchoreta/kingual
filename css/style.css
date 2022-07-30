@@ -300,7 +300,7 @@ main div iframe {
 
 
 .contactFormHtml {
-    width: min-content;
+    width: 270px;
     margin: 0.5em;
     padding: 1px;
     display: flex;
