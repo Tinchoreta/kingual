@@ -294,13 +294,13 @@ main h4 {
     margin-left: 1.5em;
 }
 
-main div iframe {
+main div section iframe {
     margin: 1em;
 }
 
 
 .contactFormHtml {
-    width: 270px;
+    width: 350px;
     margin: 0.5em;
     padding: 1px;
     display: flex;
@@ -327,6 +327,24 @@ main div iframe {
 .avisoCamposObligatorios {
     justify-content: baseline;
 }
+
+.contenedorMap{
+
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.contenedorMap iframe{
+
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 
 .direccionContacto{
     display: flex;
@@ -402,11 +420,23 @@ main ul div img {
     }
 
     /*Contacto*/
-
+    main div section iframe {
+        margin: 0.7em;
+    }
     .contactForm {
         grid-template-columns: 1fr;
     }
 
+    .contactFormHtml {
+        width: 300px;
+        margin: 0.3em;
+        padding: 1px;
+        display: flex;
+        flex-direction: column;
+        background-color: #0077B6;
+        border: solid 2px #03045E;
+        border-radius: 8px;
+    }
 
     .whatsapp {
 
@@ -427,7 +457,7 @@ main ul div img {
     }
 
 }
-
+/*Media query celu*/
 @media screen and (max-width: 480px) {
 
     header {
@@ -461,6 +491,21 @@ main ul div img {
         margin-left: 0.5em;
         width: 480px;
         height: 270px;
+    }
+
+    /*Contacto*/
+    main div section iframe {
+        margin: 0.5em;
+    }
+    .contactFormHtml {
+        width: 260px;
+        margin: 0.2em;
+        padding: 1px;
+        display: flex;
+        flex-direction: column;
+        background-color: #0077B6;
+        border: solid 2px #03045E;
+        border-radius: 8px;
     }
 
      .whatsapp {

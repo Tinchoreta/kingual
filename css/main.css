@@ -420,7 +420,7 @@ footer {
   align-items: flex-end;
   position: fixed;
   justify-content: right;
-  bottom: 45%;
+  bottom: 55%;
   right: 5%; }
   .whatsapp img {
     width: 45px;
@@ -452,7 +452,7 @@ footer {
     align-items: flex-end;
     position: fixed;
     justify-content: right;
-    bottom: 5%;
+    bottom: 50%;
     right: 7%; }
   .whatsapp img {
     width: 35px;
@@ -485,7 +485,7 @@ footer {
     align-items: flex-end;
     position: fixed;
     justify-content: right;
-    bottom: 20%;
+    bottom: 50%;
     right: 10%; }
   .whatsapp img {
     width: 35px;
