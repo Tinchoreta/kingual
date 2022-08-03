@@ -472,7 +472,8 @@ main div section iframe {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-bottom: 1.5em; }
 
 .contenedorMap iframe {
   position: absolute;
