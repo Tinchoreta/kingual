@@ -423,6 +423,69 @@ footer {
     width: 45px;
     height: 45px; }
 
+.contenedorForm {
+  display: flex;
+  flex-direction: column;
+  margin: 0; }
+
+.contactForm {
+  margin: 0.3em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: start;
+  justify-content: start; }
+
+main h3 {
+  margin: 1em; }
+
+main h4 {
+  margin-left: 1.5em; }
+
+main div section iframe {
+  margin: 1em; }
+
+.contactFormHtml {
+  width: 350px;
+  margin: 0.5em;
+  padding: 1px;
+  display: flex;
+  flex-direction: column;
+  background-color: #0077B6;
+  border: solid 2px #03045E;
+  border-radius: 8px; }
+
+.contactForm div {
+  margin: 8px;
+  padding: 5px;
+  align-self: flex-end; }
+
+.contactForm button {
+  margin-right: 15px;
+  width: 100px;
+  height: 35px;
+  align-self: flex-end; }
+
+.avisoCamposObligatorios {
+  justify-content: baseline; }
+
+.contenedorMap {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden; }
+
+.contenedorMap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.direccionContacto {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5em; }
+
 /*Media Queries*/
 @media screen and (max-width: 768px) {
   /*Index*/
