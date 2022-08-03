@@ -445,7 +445,7 @@ main div section iframe {
   margin: 1em; }
 
 .contactFormHtml {
-  width: 350px;
+  width: 360px;
   margin: 0.5em;
   padding: 1px;
   display: flex;
@@ -506,6 +506,15 @@ main div section iframe {
   /*Contacto*/
   .contactForm {
     grid-template-columns: 1fr; }
+  .contactFormHtml {
+    width: 320px;
+    margin: 0.5em;
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+    background-color: #0077B6;
+    border: solid 2px #03045E;
+    border-radius: 8px; }
   .whatsapp {
     display: flex;
     border: none;
@@ -550,4 +559,13 @@ main div section iframe {
     right: 7%; }
   .whatsapp img {
     width: 35px;
-    height: 35px; } }
+    height: 35px; }
+  .contactFormHtml {
+    width: 310px;
+    margin: 0.5em;
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+    background-color: #0077B6;
+    border: solid 2px #03045E;
+    border-radius: 8px; } }
