@@ -407,7 +407,8 @@ article ol {
 footer {
   background-color: #00B4D8;
   background-image: url(../images/stacked-waves-haikei.svg);
-  object-fit: cover; }
+  object-fit: cover;
+  background-repeat: no-repeat; }
 
 .whatsapp {
   display: flex;
@@ -555,8 +556,8 @@ main div section iframe {
     align-items: flex-end;
     position: fixed;
     justify-content: right;
-    bottom: 20%;
-    right: 7%; }
+    bottom: 10%;
+    right: 4%; }
   .whatsapp img {
     width: 35px;
     height: 35px; }
