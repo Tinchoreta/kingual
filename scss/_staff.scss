@@ -5,7 +5,7 @@
 }
 
 .body {
-    background-color: $color-fondo-staff;
+    background-color: map-get($colores , "color-fondo-staff");
     z-index: 10000;
 }
 
@@ -15,7 +15,7 @@
     align-items: center;
     justify-content: center;
     min-height: 75vh;
-    background: $color-fondo-tarjetas;
+    background: map-get($colores , "color-fondo-tarjetas");
     flex-wrap: wrap;
 }
 
@@ -23,7 +23,7 @@
     position: relative;
     width: 300px;
     height: 400px;
-    background: $color-neutro;
+    background: map-get($colores , "color-neutro");
     border-radius: 5px;
     overflow: hidden;
     transition: .5s;
@@ -31,7 +31,7 @@
     display: inline-block;
 
     &:hover{
-        box-shadow: 0 5px 15px $color-principal-normal;
+        box-shadow: 0 5px 15px map-get($colores , "color-principal-normal");
         transform: translateY(-15px);
     }
 
@@ -46,7 +46,7 @@
         width: 300px;
         height: 300px;
         border-radius: 50%;
-        background: $color-principal-normal;
+        background: map-get($colores , "color-principal-normal");
         bottom: 0;
     }
 
@@ -54,7 +54,7 @@
         width: 150px;
         height: 150px;
         position: absolute;
-        background: $color-neutro;
+        background: map-get($colores , "color-neutro");
         padding: 5px;
         border-radius: 50%;
         bottom: -30%;
@@ -72,17 +72,17 @@
     & .description {
         height: 200px;
         padding: 40px 20px 20px 20px;
-        border-bottom: solid 1px $color-principal-muy-fuerte;
+        border-bottom: solid 1px map-get($colores , "color-principal-muy-fuerte");
         text-align: center;
         
     }
 
     & .description h3 {
-        color: $color-principal-muy-fuerte;
+        color: map-get($colores , "color-principal-muy-fuerte");
     }
 
     & .description h4 {
-        color: $color-principal-fuerte;
+        color: map-get($colores , "color-principal-fuerte");
         font-size: large;
     }
 
@@ -101,8 +101,8 @@
 
     & .contact a {
         text-decoration: none;
-        color: $color-neutro;
-        background: $color-principal-fuerte;
+        color: map-get($colores , "color-neutro");
+        background: map-get($colores , "color-principal-fuerte");
         padding: 5px 20px;
         border-radius: 5px;
         transition: .3s;
@@ -110,7 +110,7 @@
     
     & .contact a:hover {
 
-        background: $color-principal-muy-fuerte;
+        background: map-get($colores , "color-principal-muy-fuerte");
     
     }
 }

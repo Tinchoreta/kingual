@@ -1,5 +1,5 @@
 footer {
-    background-color: $color-principal-normal;
+    background-color: map-get($colores , "color-principal-normal");
     background-image: url(../images/stacked-waves-haikei.svg);
     object-fit: cover;
     background-size: cover;

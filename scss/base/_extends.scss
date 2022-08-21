@@ -1,7 +1,7 @@
 %titulo{
     text-align: center;
     text-decoration: solid;
-    text-shadow: $color-principal-muy-fuerte;
+    text-shadow: map-get($colores, "color-principal-muy-fuerte");
 }
 
 @mixin AlineaJustifica($align, $justify){
