@@ -1,0 +1,39 @@
+/*Planes*/
+
+
+main ul {
+    margin: 2em;
+}
+
+main ul li {
+    margin: 1em;
+    text-decoration: underline;
+
+}
+
+main ul div {
+    justify-content: center;
+    align-items: baseline;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: row;
+
+    list-style-type: georgian;
+}
+
+main ul div p {
+
+    margin: 1em;
+}
+
+main ul div img {
+    margin: 1em;
+    padding: 0.5em;
+    width: 450px;
+    height: 350px;
+    object-fit: fill;
+    align-self: flex-start;
+    border-radius: 6px;
+    border: solid #0077B6;
+
+}
