@@ -309,8 +309,8 @@ article {
 
 article ol {
   margin: 10px;
-  margin-left: 30px;
-  padding: 1px; }
+  padding: 1px;
+  margin-left: 30px; }
 
 .articleText {
   margin-top: 10px; }

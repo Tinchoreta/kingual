@@ -4,8 +4,12 @@
     text-shadow: map-get($colores, "color-principal-muy-fuerte");
 }
 
-@mixin AlineaJustifica($align, $justify){
+@mixin AlineaJustificaSelf($align, $justify){
     align-self: $align;
     justify-self: $justify;
 }
 
+@mixin MarginPadding($margin, $padding){
+    margin: $margin;
+    padding: $padding;
+}
