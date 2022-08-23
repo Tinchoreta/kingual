@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.0" width="226.000000pt" height="94.000000pt" viewBox="0 0 226.000000 94.000000" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="497.773" y1="380.045" x2="497.773" y2="869.665" id="gradient-0">
+      <stop offset="0" style="stop-color: rgba(54, 56, 46, 1)"/>
+      <stop offset="1" style="stop-color: rgba(0, 0, 0, 1)"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="1524.952" y1="180.148" x2="1524.952" y2="688.187" id="gradient-1">
+      <stop offset="0" style="stop-color: rgba(54, 56, 46, 1)"/>
+      <stop offset="1" style="stop-color: rgba(0, 0, 0, 1)"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="825.628" y1="511.031" x2="825.628" y2="539.764" id="gradient-2">
+      <stop offset="0" style="stop-color: rgba(54, 56, 46, 1)"/>
+      <stop offset="1" style="stop-color: rgba(0, 0, 0, 1)"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="735.561" y1="180" x2="735.561" y2="250" id="gradient-3">
+      <stop offset="0" style="stop-color: rgba(54, 56, 46, 1)"/>
+      <stop offset="1" style="stop-color: rgba(0, 0, 0, 1)"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="817.908" y1="181.49" x2="817.908" y2="249.106" id="gradient-4">
+      <stop offset="0" style="stop-color: rgba(54, 56, 46, 1)"/>
+      <stop offset="1" style="stop-color: rgba(0, 0, 0, 1)"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="912.054" y1="181.108" x2="912.054" y2="250" id="gradient-5">
+      <stop offset="0" style="stop-color: rgba(54, 56, 46, 1)"/>
+      <stop offset="1" style="stop-color: rgba(0, 0, 0, 1)"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="1009.33" y1="185" x2="1009.33" y2="248.093" id="gradient-6">
+      <stop offset="0" style="stop-color: rgba(54, 56, 46, 1)"/>
+      <stop offset="1" style="stop-color: rgba(0, 0, 0, 1)"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="1109.772" y1="183.85" x2="1109.772" y2="248.876" id="gradient-7">
+      <stop offset="0" style="stop-color: rgba(54, 56, 46, 1)"/>
+      <stop offset="1" style="stop-color: rgba(0, 0, 0, 1)"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="1197.43" y1="180" x2="1197.43" y2="249.153" id="gradient-8">
+      <stop offset="0" style="stop-color: rgba(54, 56, 46, 1)"/>
+      <stop offset="1" style="stop-color: rgba(0, 0, 0, 1)"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="1345.503" y1="182.619" x2="1345.503" y2="248.336" id="gradient-9">
+      <stop offset="0" style="stop-color: rgba(54, 56, 46, 1)"/>
+      <stop offset="1" style="stop-color: rgba(0, 0, 0, 1)"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="1445.436" y1="180.799" x2="1445.436" y2="250.289" id="gradient-10">
+      <stop offset="0" style="stop-color: rgba(54, 56, 46, 1)"/>
+      <stop offset="1" style="stop-color: rgba(0, 0, 0, 1)"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(0.000000,94.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+    <path d="M765 846 c-126 -41 -281 -131 -402 -233 -29 -25 -53 -43 -53 -41 0 2 13 43 29 91 16 48 26 89 22 92 -5 2 -19 -7 -31 -20 -24 -25 -73 -34 -85 -15 -3 6 -11 10 -17 10 -6 0 -3 -9 7 -20 20 -22 55 -26 85 -10 19 10 19 9 0 -45 -30 -86 -89 -192 -126 -225 -45 -39 -78 -47 -120 -26 -46 21 -54 20 -25 -4 26 -22 86 -27 123 -9 13 6 39 31 58 57 19 25 54 66 78 91 l43 46 17 -25 c37 -55 119 -134 157 -151 72 -33 185 -20 237 28 34 30 18 31 -34 2 -66 -36 -141 -39 -205 -8 -44 21 -114 92 -139 141 -14 27 -13 27 59 81 135 101 275 170 400 198 104 23 140 -20 72 -88 -32 -32 -40 -35 -75 -30 -44 6 -55 -9 -15 -19 78 -20 170 76 128 135 -19 29 -96 27 -188 -3z" style="paint-order: fill; stroke: url(#gradient-0); stroke-width: 10px; fill: rgba(255, 255, 255, 0);"/>
+    <path d="M2058 673 c-22 -24 -38 -88 -38 -148 0 -46 -3 -52 -36 -73 -71 -46 -124 -40 -146 18 -9 23 -11 24 -22 6 -24 -39 -45 -61 -51 -54 -11 11 23 57 50 70 14 6 22 15 19 19 -6 10 -50 -11 -112 -53 -88 -60 -142 -57 -142 10 l0 37 -34 -40 c-36 -42 -57 -42 -38 -1 15 34 5 39 -29 13 -26 -19 -33 -20 -65 -8 -27 10 -38 10 -49 1 -12 -10 -15 -9 -16 6 -1 11 -1 25 0 32 3 21 -40 5 -66 -24 -29 -31 -83 -64 -108 -64 -10 0 -34 15 -52 32 -34 33 -34 33 -63 16 -29 -16 -30 -16 -30 2 0 26 -3 25 -56 -11 -88 -60 -144 -57 -144 8 0 28 -3 34 -10 23 -17 -27 -12 -68 11 -81 31 -16 106 -5 140 20 36 27 37 26 31 -4 -6 -33 8 -32 43 5 16 17 32 30 36 30 4 0 21 -14 39 -31 27 -28 35 -30 68 -24 20 4 43 12 50 17 9 8 16 8 24 0 17 -17 46 -15 57 6 6 9 11 13 11 9 0 -5 -9 -22 -20 -38 -42 -57 -58 -111 -53 -166 6 -56 23 -73 23 -24 0 17 9 45 19 63 11 18 27 60 36 93 19 75 43 102 75 85 12 -6 33 -9 46 -6 18 5 24 2 24 -9 0 -23 26 -29 51 -11 20 14 23 13 39 -6 23 -29 80 -26 136 7 l44 26 0 -26 c0 -31 29 -34 55 -6 17 20 17 20 45 -1 36 -26 86 -20 140 16 l37 25 12 -25 c14 -32 51 -46 92 -34 40 12 109 57 109 71 0 7 -9 5 -22 -5 -13 -9 -42 -26 -65 -38 -35 -18 -46 -20 -68 -10 -42 19 -45 47 -13 124 41 96 31 182 -14 131z m27 -35 c-4 -17 -16 -54 -26 -82 l-19 -51 4 55 c4 62 20 110 37 110 7 0 8 -11 4 -32z m-770 -178 c-9 -16 -20 -30 -25 -30 -14 0 -12 12 6 38 23 33 37 27 19 -8z m-14 -143 c-11 -26 -22 -47 -25 -47 -6 0 8 47 25 84 22 46 21 13 0 -37z" style="paint-order: fill; stroke: url(#gradient-1); stroke-width: 10px; fill: rgba(255, 255, 255, 0);"/>
+    <path d="M815 529 c-4 -6 -5 -13 -2 -16 7 -7 27 6 27 18 0 12 -17 12 -25 -2z" style="paint-order: fill; stroke: url(#gradient-2); stroke-width: 10px; fill: rgba(255, 255, 255, 0);"/>
+    <path d="M714 215 c0 -30 4 -35 24 -35 21 0 22 2 12 15 -7 8 -8 15 -3 15 5 0 9 9 10 20 1 14 -4 20 -20 20 -19 0 -23 -5 -23 -35z" style="paint-order: fill; stroke: url(#gradient-3); stroke-width: 10px; fill: rgba(255, 255, 255, 0);"/>
+    <path d="M793 228 c4 -13 7 -29 7 -36 0 -8 9 -12 23 -10 17 2 22 10 22 33 0 26 -4 30 -29 33 -26 3 -28 1 -23 -20z m39 -13 c0 -5 -5 -11 -11 -13 -6 -2 -11 4 -11 13 0 9 5 15 11 13 6 -2 11 -8 11 -13z" style="paint-order: fill; stroke: url(#gradient-4); stroke-width: 10px; fill: rgba(255, 255, 255, 0);"/>
+    <path d="M885 225 c2 -32 19 -50 39 -42 10 4 16 18 15 39 -1 29 -2 30 -8 9 -9 -34 -31 -39 -31 -7 0 14 -4 26 -8 26 -4 0 -7 -11 -7 -25z" style="paint-order: fill; stroke: url(#gradient-5); stroke-width: 10px; fill: rgba(255, 255, 255, 0);"/>
+    <path d="M984 236 c-11 -28 0 -51 25 -51 14 0 26 6 29 14 3 9 -1 11 -17 6 -16 -5 -21 -2 -21 10 0 13 6 16 21 12 13 -3 19 -1 16 6 -6 18 -46 21 -53 3z" style="paint-order: fill; stroke: url(#gradient-6); stroke-width: 10px; fill: rgba(255, 255, 255, 0);"/>
+    <path d="M1090 224 c-15 -38 -13 -41 20 -40 33 1 35 4 18 41 -14 32 -26 32 -38 -1z" style="paint-order: fill; stroke: url(#gradient-7); stroke-width: 10px; fill: rgba(255, 255, 255, 0);"/>
+    <path d="M1170 240 c0 -5 5 -10 10 -10 6 0 10 -11 10 -25 0 -14 5 -25 10 -25 6 0 10 13 10 29 0 16 6 32 13 34 6 3 -3 6 -20 6 -18 1 -33 -3 -33 -9z" style="paint-order: fill; stroke: url(#gradient-8); stroke-width: 10px; fill: rgba(255, 255, 255, 0);"/>
+    <path d="M1321 236 c-26 -31 14 -71 45 -45 8 7 14 22 12 33 -4 26 -40 33 -57 12z m39 -22 c0 -8 -7 -14 -15 -14 -15 0 -21 21 -9 33 10 9 24 -2 24 -19z" style="paint-order: fill; stroke: url(#gradient-9); stroke-width: 10px; fill: rgba(255, 255, 255, 0);"/>
+    <path d="M1421 213 c0 -30 2 -34 9 -18 7 18 8 19 15 3 12 -29 25 -20 25 17 0 34 -13 47 -23 23 -4 -10 -6 -10 -6 0 -1 6 -5 12 -11 12 -5 0 -10 -17 -9 -37z" style="paint-order: fill; stroke: url(#gradient-10); stroke-width: 10px; fill: rgba(255, 255, 255, 0);"/>
+  </g>
+</svg>
