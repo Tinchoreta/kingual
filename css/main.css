@@ -432,6 +432,9 @@ footer {
     height: 45px; }
 
 /*Planes*/
+.mainPlanes {
+  margin: 2em; }
+
 main ul {
   margin: 2em; }
 
