@@ -6,6 +6,6 @@ class Paquete {
     }
 
     precioConIva() {
-        return this.precio * IVA;
+        return parseFloat( this.precio * IVA).toFixed(2);
     }
 }

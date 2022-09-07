@@ -12,7 +12,7 @@ function llenarArrayPaquetes() {
 
 function mostrarPaquetes() {
     for (const paquete of paquetes) {
-        alert(paquete.nombre);
+        console.log(paquete.nombre);
     }
 }
 
