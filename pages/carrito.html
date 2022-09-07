@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../scripts/variables.js"></script>
+    <script defer src="../scripts/arrays.js"></script>
+    <title>Carrito de compras - Arrays</title>
+</head>
+<body>
+    <h1>Tratamiento de Arrays a partir de un carrito de compras</h1>    
+    <p>Carga dinámica de paquetes de clases de inglés</p>
+    <article class="container">
+        <div class="parent">
+            <div>
+                <label for="selectPaquete">Paquetes</label>
+                <select id="selectPaquete" name="selectPaquete">
+                    <option value="" selected disabled>...</option> -->
+                    <option value="">Full Kingual</option>
+                    <option value="">Regular Kingual</option>
+                    <option value="">Starter Kingual</option>
+                    <option value="">Leccion individual Kingual</option>
+                    <option value="">30 min express Kingual</option>
+                </select>
+            </div>
+            <footer>
+                <button class="button" onclick="listarPaquetes()">LISTAR PAQUETES</button>
+                <button class="button button-blue" onclick="agregarPaquete()">AGREGAR PAQUETE</button>
+                <button class="button button-outline" onclick="buscarPaquete()">BUSCAR PAQUETE</button>
+                <button class="button button-delete" onclick="quitarPaquete()">QUITAR UN PAQUETE</button>
+            </footer>
+        </div>
+    </article>
+</body>
+</html>
