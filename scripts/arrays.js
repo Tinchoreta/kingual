@@ -21,9 +21,9 @@ mostrarPaquetes();
 
 function agregarPaquete() {
     let nuevoPaquete = prompt("Ingresa un nuevo Paquete:")
-    let resultado = Paquetes.find(resultado => resultado.nombre === nuevoPaquete)
+    let resultado = paquetes.find(resultado => resultado.nombre === nuevoPaquete)
     if (resultado === false) {
-        Paquetes.push(nuevoPaquete)
+        paquetes.push(nuevoPaquete)
         console.table(Paquetes)
     } else {
         console.warn("El Paquete ingresado ya existe en el array.")
@@ -31,23 +31,23 @@ function agregarPaquete() {
 }
 
 function removerUltimoPaquete() {
-    Paquetees.pop()
-    console.table(Paquetes)
+    paquetes.pop()
+    console.table(paquetes)
 }
 
 function quitarPaquete() {
     let posicion = prompt("Indica el paquete a quitar:")
-    let indice = Paquetes.indexOf(posicion)
+    let indice = paquetes.indexOf(posicion)
     if (indice > -1) {
-        let resultado = Paquetes.splice(indice, 1)
+        let resultado = paquetes.splice(indice, 1)
         console.log(resultado)
-        console.table(Paquetes)
+        console.table(paquetes)
     } else {
         console.warn("No se ha encontrado el Paquete de clases:", posicion)
     }
 }
 
 function fusionar() {
-    const paquetesPremium = Paquetes.concat(paquetesExpress)
+    const paquetesPremium = paquetes.concat(paquetesExpress)
     console.table(paquetesPremium)
 }
