@@ -21,7 +21,7 @@ mostrarPaquetes();
 
 function agregarPaquete() {
     let nuevoPaquete = prompt("Ingresa un nuevo Paquete:")
-    let resultado = Paquetes.includes(nuevoPaquete)
+    let resultado = Paquetes.find(resultado => resultado.nombre === nuevoPaquete)
     if (resultado === false) {
         Paquetes.push(nuevoPaquete)
         console.table(Paquetes)
@@ -32,16 +32,16 @@ function agregarPaquete() {
 
 function removerUltimoPaquete() {
     Paquetees.pop()
-    console.table(Paquetees)
+    console.table(Paquetes)
 }
 
 function quitarPaquete() {
-    let posicion = prompt("Indica el país a quitar:")
-    let indice = Paquetees.indexOf(posicion)
+    let posicion = prompt("Indica el paquete a quitar:")
+    let indice = Paquetes.indexOf(posicion)
     if (indice > -1) {
-        let resultado = Paquetees.splice(indice, 1)
+        let resultado = Paquetes.splice(indice, 1)
         console.log(resultado)
-        console.table(Paquetees)
+        console.table(Paquetes)
     } else {
         console.warn("No se ha encontrado el Paquete de clases:", posicion)
     }
