@@ -1,5 +1,3 @@
-@import "Paquete.class.js";
-
 const paquetes = [];
 
 function llenarArrayPaquetes() {
