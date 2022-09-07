@@ -20,11 +20,13 @@ llenarArrayPaquetes();
 mostrarPaquetes();
 
 function agregarPaquete() {
+    debugger
     let nuevoPaquete = prompt("Ingresa un nuevo Paquete:")
     let resultado = paquetes.find(resultado => resultado.nombre === nuevoPaquete)
-    if (resultado === false) {
-        paquetes.push(nuevoPaquete)
-        console.table(Paquetes)
+    
+    if (typeof resultado === 'undefined') {
+        paquetes.push( new Paquete (paquetes.length, nuevoPaquete, 100))
+        console.table(paquetes)
     } else {
         console.warn("El Paquete ingresado ya existe en el array.")
     }
