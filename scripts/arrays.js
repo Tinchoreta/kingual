@@ -39,7 +39,7 @@ function removerUltimoPaquete() {
 
 function quitarPaquete() {
     let posicion = prompt("Indica el paquete a quitar:")
-    let indice = paquetes.indexOf(posicion)
+    let indice = paquetes.find(posicion)
     if (indice > -1) {
         let resultado = paquetes.splice(indice, 1)
         console.log(resultado)
@@ -49,7 +49,3 @@ function quitarPaquete() {
     }
 }
 
-function fusionar() {
-    const paquetesPremium = paquetes.concat(paquetesExpress)
-    console.table(paquetesPremium)
-}
