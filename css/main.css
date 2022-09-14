@@ -609,3 +609,14 @@ main div section iframe {
     background-color: #0077B6;
     border: solid 2px #03045E;
     border-radius: 8px; } }
+
+.classBodyCarrito {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+
+.footerCarrito {
+  margin-top: auto; }
+
+.contentCarrito {
+  margin: 1.5em; }

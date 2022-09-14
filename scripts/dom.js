@@ -10,7 +10,7 @@ let fila = ""
     tabla.innerHTML = ""
     array.forEach(paquete => {
         fila = `<tr>
-                    <td>${paquete.numero}</td>
+                    <td>${paquete.numeroPaquete}</td>
                     <td>${paquete.nombre}</td>
                     <td>${paquete.precio}</td>
                     <td>${paquete.precioConIva()}</td>
