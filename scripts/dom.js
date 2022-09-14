@@ -12,8 +12,8 @@ let fila = ""
         fila = `<tr>
                     <td>${paquete.numeroPaquete}</td>
                     <td>${paquete.nombre}</td>
-                    <td>${paquete.precio}</td>
-                    <td>${paquete.precioConIva()}</td>
+                    <td> $ ${paquete.precio}</td>
+                    <td> $ ${paquete.precioConIva()}</td>
                 </tr>`
                 tabla.innerHTML += fila
     })
