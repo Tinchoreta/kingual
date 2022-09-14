@@ -5,7 +5,9 @@ function llenarArrayPaquetes() {
     paquetes.push(new Paquete(2, "Regular Kingual", 19.90));
     paquetes.push(new Paquete(3, "Starter Kingual", 9.90));
     paquetes.push(new Paquete(4, "Leccion individual Kingual", 7.90));
-    paquetes.push(new Paquete(5, "30 min express Kingual", 5.90));
+    paquetes.push(new Paquete(5, "30 min express Kingual c/Q&A", 5.90));
+    paquetes.push(new Paquete(6, "30 min express Kingual c/Whatsapp review", 4.90));
+    paquetes.push(new Paquete(7, "30 min express Kingual regular", 3.90));
 }
 
 
