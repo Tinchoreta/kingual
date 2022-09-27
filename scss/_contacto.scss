@@ -29,7 +29,9 @@ main div section iframe {
     width: 360px;
     margin: 0.5em;
     padding: 1px;
-    display: flex;
+    display:inline-block;
+    justify-content: left;
+    align-items:baseline;
     flex-direction: column;
     background-color: #0077B6;
     border: solid 2px #03045E;
@@ -40,9 +42,12 @@ main div section iframe {
 
     margin: 8px;
     padding: 5px;
-    align-self: flex-end;
+    align-self:stretch;
 }
 
+input#nombre, #email, #telefono, #asunto{
+    width: 150px;
+}
 .contactForm button {
     margin-right: 15px;
     width: 100px;
