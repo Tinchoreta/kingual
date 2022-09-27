@@ -4,7 +4,7 @@ const inputComentarios = document.querySelector("#mensaje")
 const btnEnviar = document.querySelector("#btnEnviarMsg")
 
 function guardarDatos() {
-    localStorage.setItem("nombre",inputNombre.value) //crear una clave y almacenar un valor
+    localStorage.setItem("nombre",inputNombre.value) 
     localStorage.setItem("email",inputEmail.value)
     localStorage.setItem("comentarios",inputComentarios.value)
 }
