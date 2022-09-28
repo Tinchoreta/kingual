@@ -14,6 +14,7 @@ let fila = ""
                     <td>${paquete.nombre}</td>
                     <td> $ ${paquete.precio}</td>
                     <td> $ ${paquete.precioConIva()}</td>
+                    <td><button class="btn btn-info" id="btn${producto.id}">+</button></td>
                 </tr>`
                 tabla.innerHTML += fila
     })
