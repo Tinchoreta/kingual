@@ -1,20 +1,28 @@
 const inputNombre = document.querySelector("#nombre")
+const inputTelefono = document.querySelector("#telefono")
 const inputEmail = document.querySelector("#email")
-const inputComentarios = document.querySelector("#mensaje")
-const btnEnviar = document.querySelector("#btnEnviarMsg")
+const inputAsunto = document.querySelector("#asunto")
+const inputMensaje = document.querySelector("#mensaje")
+const btnEnviarMsg = document.querySelector("#btnEnviarMsg")
 
-function guardarDatos() {
+function guardarDatosLocal() {
+    debugger
     localStorage.setItem("nombre",inputNombre.value) 
+    localStorage.setItem("telefono",inputTelefono.value)
     localStorage.setItem("email",inputEmail.value)
-    localStorage.setItem("comentarios",inputComentarios.value)
+    localStorage.setItem("asunto",inputAsunto.value)
+    localStorage.setItem("comentarios",inputMensaje.value)
 }
 
-btnEnviar.addEventListener("click",guardarDatos)
+btnEnviarMsg.addEventListener("click",guardarDatosLocal)
 
-function recuperarDatos() {
+function recuperarDatosLocal() {
+    debugger
     inputNombre.value = localStorage.getItem("nombre") 
+    inputTelefono.value = localStorage.getItem("telefono")
     inputEmail.value = localStorage.getItem("email")
-    inputComentarios.value = localStorage.getItem("comentarios")
+    inputAsunto.value = localStorage.getItem("asunto")
+    inputMensaje.value = localStorage.getItem("mensaje")
 }
 
-document.addEventListener("DOMContentLoaded", recuperarDatos)
+document.addEventListener("DOMContentLoaded", recuperarDatosLocal)
