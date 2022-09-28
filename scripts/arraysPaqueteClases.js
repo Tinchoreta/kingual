@@ -11,14 +11,14 @@ function llenarArrayPaquetes() {
 }
 
 
-function mostrarPaquetes() {
-    for (const paquete of paquetes) {
-        console.log(paquete.nombre);
-    }
-}
+// function mostrarPaquetes() {
+//     for (const paquete of paquetes) {
+//         console.log(paquete.nombre);
+//     }
+// }
 
 llenarArrayPaquetes();
-mostrarPaquetes();
+//mostrarPaquetes();
 
 function agregarPaquete() {
     debugger

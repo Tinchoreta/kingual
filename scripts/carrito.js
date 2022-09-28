@@ -1,3 +1,20 @@
+function recuperarCarrito() {
+    if (localStorage.getItem("carrito")) {
+        carrito = JSON.parse(localStorage.getItem("carrito"))
+    }
+}
+recuperarCarrito()
+
+function eventoEnBotones() {
+
+    debugger
+    paquetes.forEach(paq => {
+        const btn = document.querySelector(`#btn${paq.numeroPaquete}`)
+              btn.addEventListener("click", ()=> agregarAlCarrito(`${paq.numeroPaquete}`))
+    })
+}
+eventoEnBotones()
+
 function recuperoCarrito() {
     //debugger
     let carrito = JSON.parse(localStorage.getItem("carrito"))
@@ -13,16 +30,6 @@ function recuperoCarrito() {
 }
 recuperoCarrito()
 
-function eventoEnBotones() {
-
-    debugger
-    paquetes.forEach(paq => {
-        const btn = document.querySelector(`#btn${paq.numeroPaquete}`)
-              btn.addEventListener("click", ()=> agregarAlCarrito(`${paq.numeroPaquete}`))
-    })
-}
-eventoEnBotones()
-
 function agregarAlCarrito(id) {
     const paquete = paquetes.find(paq => paq.numeroPaquete == id)
           carrito.push(paquete)
@@ -30,9 +37,3 @@ function agregarAlCarrito(id) {
           localStorage.setItem("carrito", JSON.stringify(carrito))
 }
 
-function recuperarCarrito() {
-    if (localStorage.getItem("carrito")) {
-        carrito = JSON.parse(localStorage.getItem("carrito"))
-    }
-}
-recuperarCarrito()
