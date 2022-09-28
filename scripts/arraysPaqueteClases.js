@@ -52,7 +52,7 @@ function quitarPaquete() {
 
 function eventoEnBotones() {
     paquetes.forEach(paq => {
-        const btn = document.querySelector(`#btn${paq.numeroPaquete}.btn.btn-info`)
+        const btn = document.querySelector(`#btn${paq.numeroPaquete}`)
               btn.addEventListener("click", ()=> agregarAlCarrito(`${paq.numeroPaquete}`))
     })
 }
