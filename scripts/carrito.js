@@ -1,11 +1,12 @@
 function recuperoCarrito() {
     //debugger
     let carrito = JSON.parse(localStorage.getItem("carrito"))
-    let tabla = document.querySelector("tbody")
-        carrito.forEach(prod => {
+    let tabla = document.querySelector("#carrito")
+        carrito.forEach(paq => {
             let fila = `<tr>
-                            <td>${prod.nombre}</td>
-                            <td>$ ${prod.importe}</td>
+                            <td>${paq.nombre}</td>
+                            <td>$ ${paq.precio}</td>
+                            <td> $ ${paq.precioConIva()}</td>
                         </tr>`
                         tabla.innerHTML += fila
         });
