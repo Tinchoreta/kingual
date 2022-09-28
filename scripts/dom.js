@@ -17,7 +17,6 @@ let fila = ""
                     <td><button id="btn${paquete.numeroPaquete}">+</button></td>
                 </tr>`
                 tabla.innerHTML += fila
-                console.table(tabla.innerHTML)
     })
 } 
 cargarPaquetes(paquetes)

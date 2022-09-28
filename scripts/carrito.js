@@ -6,7 +6,7 @@ function recuperoCarrito() {
             let fila = `<tr>
                             <td>${paq.nombre}</td>
                             <td>$ ${paq.precio}</td>
-                            <td>$ ${paq.precioConIva()}</td>
+                            
                         </tr>`
                         tabla.innerHTML += fila
         });
