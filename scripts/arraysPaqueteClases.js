@@ -50,24 +50,3 @@ function quitarPaquete() {
     }
 }
 
-function eventoEnBotones() {
-    paquetes.forEach(paq => {
-        const btn = document.querySelector(`#btn${paq.numeroPaquete}`)
-              btn.addEventListener("click", ()=> agregarAlCarrito(`${paq.numeroPaquete}`))
-    })
-}
-eventoEnBotones()
-
-function agregarAlCarrito(id) {
-    const paquete = paquetes.find(paq => paq.numeroPaquete == id)
-          carrito.push(paquete)
-          //console.table(carrito)
-          localStorage.setItem("carrito", JSON.stringify(carrito))
-}
-
-function recuperarCarrito() {
-    if (localStorage.getItem("carrito")) {
-        carrito = JSON.parse(localStorage.getItem("carrito"))
-    }
-}
-recuperarCarrito()
