@@ -24,14 +24,14 @@ cargarPaquetes(paquetes)
 
 const parrafoFinal = document.createElement("p")
 
-function crearElementoHTML() {
-          parrafoFinal.id = "parrafoHTML"
-          parrafoFinal.innerText = "Párrafo creado desde JS."
-          parrafoFinal.className = "text-rojo"
-          document.body.append(parrafoFinal)
-}
+// function crearElementoHTML() {
+//           parrafoFinal.id = "parrafoHTML"
+//           parrafoFinal.innerText = "Párrafo creado desde JS."
+//           parrafoFinal.className = "text-rojo"
+//           document.body.append(parrafoFinal)
+// }
 
-crearElementoHTML()
+// crearElementoHTML()
 //EVENTOS JAVASCRIPT
 
 const inputFiltrar = document.querySelector("input")
