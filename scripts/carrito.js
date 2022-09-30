@@ -19,7 +19,9 @@ function recuperoCarrito() {
     //debugger
     let carrito = JSON.parse(localStorage.getItem("carrito"))
 
-    carrito.length === 0 
+    //OPERADOR AND
+
+    Object.entries(carrito).length === 0 && console.log("No se encontro carrito en almacenamiento")
 
     let tabla = document.querySelector("#carrito")
         carrito.forEach(paq => {
