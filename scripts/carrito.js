@@ -18,6 +18,9 @@ eventoEnBotones()
 function recuperoCarrito() {
     //debugger
     let carrito = JSON.parse(localStorage.getItem("carrito"))
+
+    carrito.length === 0 
+
     let tabla = document.querySelector("#carrito")
         carrito.forEach(paq => {
             let fila = `<tr>

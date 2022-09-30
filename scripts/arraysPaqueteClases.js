@@ -1,3 +1,6 @@
+const IVA = 1.21
+const paquetes = [];
+let carrito = [];
 
 function llenarArrayPaquetes() {
 
@@ -39,14 +42,12 @@ function removerUltimoPaquete() {
 }
 
 function quitarPaquete() {
-    let posicion = prompt("Indica el paquete a quitar:")
+    let posicion = prompt("Indica el paquete a quitar a partir de su indice:")
     let indice = paquetes.find(posicion)
-    if (indice > -1) {
-        let resultado = paquetes.splice(indice, 1)
-        console.log(resultado)
-        console.table(paquetes)
-    } else {
-        console.warn("No se ha encontrado el Paquete de clases:", posicion)
-    }
+    let resultado = new Paquete(0,"",0)
+
+     indice > -1 ? resultado = paquetes.splice(indice, 1) : console.warn(" ⛔ No se ha encontrado el Paquete de clases:", posicion)
+       
+    
 }
 

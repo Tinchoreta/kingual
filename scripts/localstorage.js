@@ -11,18 +11,20 @@ function guardarDatosLocal() {
     localStorage.setItem("telefono",inputTelefono.value)
     localStorage.setItem("email",inputEmail.value)
     localStorage.setItem("asunto",inputAsunto.value)
-    localStorage.setItem("comentarios",inputMensaje.value)
+    localStorage.setItem("mensaje",inputMensaje.value)
 }
 
 btnEnviarMsg.addEventListener("click",guardarDatosLocal)
 
+//Operador OR
+
 function recuperarDatosLocal() {
     debugger
-    inputNombre.value = localStorage.getItem("nombre") 
-    inputTelefono.value = localStorage.getItem("telefono")
-    inputEmail.value = localStorage.getItem("email")
-    inputAsunto.value = localStorage.getItem("asunto")
-    inputMensaje.value = localStorage.getItem("mensaje")
+    inputNombre.value = localStorage.getItem("nombre") || ""
+    inputTelefono.value = localStorage.getItem("telefono") || ""
+    inputEmail.value = localStorage.getItem("email") || ""
+    inputAsunto.value = localStorage.getItem("asunto") || ""
+    inputMensaje.value = localStorage.getItem("mensaje") || ""
 }
 
 document.addEventListener("DOMContentLoaded", recuperarDatosLocal)
