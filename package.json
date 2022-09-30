@@ -23,6 +23,7 @@
     "nodemon": "^2.0.19"
   },
   "dependencies": {
-    "@popperjs/core": "^2.11.5"
+    "@popperjs/core": "^2.11.5",
+    "sweetalert2": "^11.4.35"
   }
 }
