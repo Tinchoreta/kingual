@@ -620,6 +620,9 @@ input#nombre, #email, #telefono, #asunto {
   flex-direction: column;
   min-height: 100vh; }
 
+#tituloCarrito {
+  display: none; }
+
 .footerCarrito {
   margin-top: auto; }
 
