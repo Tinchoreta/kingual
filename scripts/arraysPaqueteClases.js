@@ -1,17 +1,32 @@
 const IVA = 1.21
 const paquetes = [];
 let carrito = [];
+const URL="../BBDD/paquetes.json"
 
 function llenarArrayPaquetes() {
-
-    paquetes.push(new Paquete(1, "Full Kingual", 29.90));
+    
+/*     paquetes.push(new Paquete(1, "Full Kingual", 29.90));
     paquetes.push(new Paquete(2, "Regular Kingual", 19.90));
     paquetes.push(new Paquete(3, "Starter Kingual", 9.90));
     paquetes.push(new Paquete(4, "Leccion individual Kingual", 7.90));
     paquetes.push(new Paquete(5, "30 min express Kingual c/Q&A", 5.90));
     paquetes.push(new Paquete(6, "30 min express Kingual c/Whatsapp review", 4.90));
-    paquetes.push(new Paquete(7, "30 min express Kingual regular", 3.90));
+    paquetes.push(new Paquete(7, "30 min express Kingual regular", 3.90)); */
+    async ()=> {
+    try {
+        const response = await fetch(URL)
+        const data = await response.json()
+              paquetes = data 
+              //paquetes.forEach(paquete => contenidoHTML += mostrarCard(paquete))
+    } 
+    catch (error) {
+        console.log(error)
+    }
+    finally {
+        console.table(paquetes)
+    }
 }
+
 
 
 llenarArrayPaquetes();
