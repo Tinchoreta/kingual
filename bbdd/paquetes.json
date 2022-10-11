@@ -1,0 +1,54 @@
+[
+    {
+        "id": 1,
+        "numeroPaquete": "1",
+        "nombre": "Full Kingual",
+        "precio": "29.90"
+
+    },
+
+    {
+        "id": 2,
+        "numeroPaquete": "2",
+        "nombre": "Regular Kingual",
+        "precio": "19.90"
+
+    },
+
+    {
+        "id": 3,
+        "numeroPaquete": "3",
+        "nombre": "Starter Kingual",
+        "precio": "9.90"
+
+    },
+    {
+        "id": 4,
+        "numeroPaquete": "4",
+        "nombre": "Leccion individual Kingual",
+        "precio": "7.90"
+
+    },
+    {
+        "id": 5,
+        "numeroPaquete": "5",
+        "nombre": "30 min express Kingual c/Q&A",
+        "precio": "5.90"
+    },
+
+    {
+        "id": 6,
+        "numeroPaquete": "6",
+        "nombre": "30 min express Kingual c/Whatsapp review",
+        "precio": "4.90"
+
+    },
+    {
+        "id": 7,
+        "numeroPaquete": "7",
+        "nombre": "30 min express Kingual",
+        "precio": "3.90"
+
+    }
+
+]

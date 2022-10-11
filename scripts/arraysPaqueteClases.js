@@ -14,12 +14,6 @@ function llenarArrayPaquetes() {
 }
 
 
-// function mostrarPaquetes() {
-//     for (const paquete of paquetes) {
-//         console.log(paquete.nombre);
-//     }
-// }
-
 llenarArrayPaquetes();
 //mostrarPaquetes();
 
