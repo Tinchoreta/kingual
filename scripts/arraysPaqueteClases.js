@@ -1,9 +1,9 @@
 const IVA = 1.21
 const paquetes = [];
 let carrito = [];
-const URL = "../BBDD/paquetes.json"
+const URL = "../bbdd/paquetes.json"
 
-function llenarArrayPaquetes() {
+const llenarArrayPaquetes = 
 
     /*     paquetes.push(new Paquete(1, "Full Kingual", 29.90));
         paquetes.push(new Paquete(2, "Regular Kingual", 19.90));
@@ -12,11 +12,16 @@ function llenarArrayPaquetes() {
         paquetes.push(new Paquete(5, "30 min express Kingual c/Q&A", 5.90));
         paquetes.push(new Paquete(6, "30 min express Kingual c/Whatsapp review", 4.90));
         paquetes.push(new Paquete(7, "30 min express Kingual regular", 3.90)); */
+
+        /*FETCH*/
+
     async () => {
+        debugger
         try {
             const response = await fetch(URL)
             const data = await response.json()
-            paquetes = data
+            paquetes.push(...data)
+
             //paquetes.forEach(paquete => contenidoHTML += mostrarCard(paquete))
         }
         catch (error) {
@@ -26,12 +31,16 @@ function llenarArrayPaquetes() {
             console.table(paquetes)
         }
     }
-}
 
 
 
-llenarArrayPaquetes();
-//mostrarPaquetes();
+    document.addEventListener("DOMContentLoaded", async ()=> {
+        const espero = await llenarArrayPaquetes()
+        cargarPaquetes(paquetes)
+              
+    })
+//  llenarArrayPaquetes(); 
+
 
 function agregarPaquete() {
     debugger

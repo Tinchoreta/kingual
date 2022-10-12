@@ -1,5 +1,6 @@
 class Paquete {
-    constructor(numeroPaquete, nombre, precio) {
+    constructor(id, numeroPaquete, nombre, precio) {
+        this.id = id;
         this.numeroPaquete = numeroPaquete;
         this.nombre = nombre;
         this.precio = precio;

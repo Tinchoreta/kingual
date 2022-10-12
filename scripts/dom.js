@@ -6,9 +6,12 @@ const filtroPaquete = document.getElementById("filtroPaquete")
 
 
 function cargarPaquetes(array) {
+    debugger
     let fila = ""
     tabla.innerHTML = ""
-    
+
+   if (array.length === 0)  return
+
     array.forEach(paquete => {
         
         //OPERADORES AVANZADOS
@@ -24,14 +27,15 @@ function cargarPaquetes(array) {
                     <td>${numeroPaquete}</td>
                     <td>${nombre}</td>
                     <td> $ ${precio}</td>
-                    <td> $ ${paquete.precioConIva()}</td>
+                    
                     <td><button class="btn btn-info" id="btn${numeroPaquete}">+</button></td>
                 </tr>`
+                //<td> $ ${paquete.precioConIva()}</td>
         tabla.innerHTML += fila
     })
     console.table(array)
 }
-cargarPaquetes(paquetes)
+
 
 
 //EVENTOS JAVASCRIPT
