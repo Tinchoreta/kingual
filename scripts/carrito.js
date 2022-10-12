@@ -3,15 +3,20 @@ const botonVerCarrito = document.getElementById("idBtnVerCarrito")
 const tituloCarrito = document.getElementById("tituloCarrito")
 
 botonVerCarrito.addEventListener("click", () =>
-    swal("Recuperando carrito"))
+    {
+    swal("Recuperando carrito")
+   // recuperarCarrito()
+    recuperoCarrito()
+    }
+    )
 
-function recuperarCarrito() {
+/* function recuperarCarrito() {
 
     if (localStorage.getItem("carrito")) {
         carrito = JSON.parse(localStorage.getItem("carrito"))
     }
-}
-recuperarCarrito()
+} */
+
 
 function eventoEnBotones() {
 
@@ -21,7 +26,7 @@ function eventoEnBotones() {
         btn.addEventListener("click", () => agregarAlCarrito(`${paq.numeroPaquete}`))
     })
 }
-eventoEnBotones()
+
 
 function recuperoCarrito() {
     debugger
@@ -48,7 +53,7 @@ function recuperoCarrito() {
     }
 }
 
-recuperoCarrito()
+
 
 const alerta = (mensaje, icono) => {    //ICONOS: question, warning, error, info
     Swal.fire({
