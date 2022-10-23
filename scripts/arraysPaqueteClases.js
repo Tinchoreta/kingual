@@ -5,14 +5,6 @@ const URL = "../bbdd/paquetes.json"
 
 const llenarArrayPaquetes = 
 
-    /*     paquetes.push(new Paquete(1, "Full Kingual", 29.90));
-        paquetes.push(new Paquete(2, "Regular Kingual", 19.90));
-        paquetes.push(new Paquete(3, "Starter Kingual", 9.90));
-        paquetes.push(new Paquete(4, "Leccion individual Kingual", 7.90));
-        paquetes.push(new Paquete(5, "30 min express Kingual c/Q&A", 5.90));
-        paquetes.push(new Paquete(6, "30 min express Kingual c/Whatsapp review", 4.90));
-        paquetes.push(new Paquete(7, "30 min express Kingual regular", 3.90)); */
-
         /*FETCH*/
 
     async () => {
@@ -20,9 +12,8 @@ const llenarArrayPaquetes =
         try {
             const response = await fetch(URL)
             const data = await response.json()
-            paquetes.push(...data)
-
-            //paquetes.forEach(paquete => contenidoHTML += mostrarCard(paquete))
+            paquetes.push(...data) //SPREAD 
+            
         }
         catch (error) {
             console.log(error)
@@ -39,7 +30,7 @@ const llenarArrayPaquetes =
         cargarPaquetes(paquetes)
         eventoEnBotones()       
     })
-//  llenarArrayPaquetes(); 
+
 
 
 function agregarPaquete() {
@@ -47,7 +38,7 @@ function agregarPaquete() {
     let nuevoPaquete = prompt("Ingresa un nuevo Paquete:")
     let resultado = paquetes.find(resultado => resultado.nombre === nuevoPaquete)
 
-    if (typeof resultado === 'undefined') {
+    if (typeof resultado === 'undefined' && resultado.length != 0) {
         paquetes.push(new Paquete(paquetes.length, nuevoPaquete, 100))
         console.table(paquetes)
     } else {
