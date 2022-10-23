@@ -6,12 +6,17 @@ const inputMensaje = document.querySelector("#mensaje")
 const btnEnviarMsg = document.querySelector("#btnEnviarMsg")
 
 function guardarDatosLocal() {
-    
-    localStorage.setItem("nombre",inputNombre.value) 
-    localStorage.setItem("telefono",inputTelefono.value)
-    localStorage.setItem("email",inputEmail.value)
-    localStorage.setItem("asunto",inputAsunto.value)
-    localStorage.setItem("mensaje",inputMensaje.value)
+    try {
+        localStorage.setItem("nombre",inputNombre.value) 
+        localStorage.setItem("telefono",inputTelefono.value)
+        localStorage.setItem("email",inputEmail.value)
+        localStorage.setItem("asunto",inputAsunto.value)
+        localStorage.setItem("mensaje",inputMensaje.value)
+    }
+    catch (error) {
+        console.log(error)
+    }
+
 }
 
 btnEnviarMsg.addEventListener("click",guardarDatosLocal)
