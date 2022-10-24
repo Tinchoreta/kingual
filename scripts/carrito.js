@@ -31,7 +31,7 @@ function eventoEnBotones() {
 
 function eventoEnBotonesCarrito() {
     
-    paquetes.forEach(paq => {
+    carrito.forEach(paq => {
         const btn = document.querySelector(`#btnDel${paq.numeroPaquete}`)
         btn.addEventListener("click", () => quitarDelCarrito(`${paq.numeroPaquete}`))
     })
@@ -42,6 +42,8 @@ function  quitarDelCarrito(id){
     const indexPaquete = carrito.findIndex(paq => paq.numeroPaquete === id)
     carrito.splice(indexPaquete,1)
     console.table(carrito)
+    limpiarListaCarrito()
+    localStorage.clear()
     localStorage.setItem("carrito", JSON.stringify(carrito))
     recuperoCarrito()
 }
@@ -62,7 +64,7 @@ function recuperoCarrito() {
             let fila = `<tr>
                             <td>${paq.nombre}</td>
                             <td>$ ${paq.precio}</td>
-                            <td><button class="btn btn-danger" id="btnDel${paq.numeroPaquete}"></button></td>
+                            <td><button class="btn btn-danger" id="btnDel${paq.numeroPaquete}">-</button></td>
                         </tr>`
             tabla.innerHTML += fila
         });
