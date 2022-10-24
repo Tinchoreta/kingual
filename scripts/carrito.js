@@ -8,20 +8,18 @@ const tabla = document.getElementById("tabla")
 const filtroPaquete = document.getElementById("filtroPaquete")
 const inputFiltrar = document.querySelector("input")
 
-botonVerCarrito.addEventListener("click", () =>
-    {
+botonVerCarrito.addEventListener("click", () => {
     swal("Recuperando carrito")
-   // recuperarCarrito()
+    // recuperarCarrito()
     recuperoCarrito()
-    eventoEnBotonesCarrito()
-    }
-    )
+}
+)
 
 
 
 function eventoEnBotones() {
 
-    
+
     paquetes.forEach(paq => {
         const btn = document.querySelector(`#btn${paq.numeroPaquete}`)
         btn.addEventListener("click", () => agregarAlCarrito(`${paq.numeroPaquete}`))
@@ -30,33 +28,34 @@ function eventoEnBotones() {
 
 
 function eventoEnBotonesCarrito() {
-    
+
     carrito.forEach(paq => {
         const btn = document.querySelector(`#btnDel${paq.numeroPaquete}`)
         btn.addEventListener("click", () => quitarDelCarrito(`${paq.numeroPaquete}`))
     })
 }
 
-function  quitarDelCarrito(id){
+function quitarDelCarrito(id) {
 
     const indexPaquete = carrito.findIndex(paq => paq.numeroPaquete === id)
-    carrito.splice(indexPaquete,1)
+    carrito.splice(indexPaquete, 1)
     console.table(carrito)
     limpiarListaCarrito()
     localStorage.clear()
     localStorage.setItem("carrito", JSON.stringify(carrito))
     recuperoCarrito()
+
 }
 
 function recuperoCarrito() {
-    
+
     let carrito = JSON.parse(localStorage.getItem("carrito"))
 
     //OPERADOR AND
-    if ((typeof carrito !== 'undefined' && typeof carrito !== 'null') && carrito !== null ) {
+    if ((typeof carrito !== 'undefined' && typeof carrito !== 'null') && carrito !== null) {
 
         carrito.length === 0 && alerta("No se encontro carrito en almacenamiento")
-        
+
         tituloCarrito.style.display = 'block'
 
         let tabla = document.querySelector("#carrito")
@@ -68,7 +67,8 @@ function recuperoCarrito() {
                         </tr>`
             tabla.innerHTML += fila
         });
-    } else{
+        eventoEnBotonesCarrito()
+    } else {
         console.log(carrito)
     }
 }
@@ -86,7 +86,7 @@ const alerta = (mensaje, icono) => {    //ICONOS: question, warning, error, info
 }
 
 function vaciarCarrito() {
-    
+
     if (Object.entries(carrito).length > 0) {
 
         Swal.fire({
@@ -96,7 +96,7 @@ function vaciarCarrito() {
             confirmButtonText: 'Sí',
             denyButtonText: `No`,
         }).then((result) => {
-            
+
             if (result.isConfirmed) {
                 console.log("Se procede a borrar los datos.")
                 localStorage.clear()
@@ -110,11 +110,11 @@ function vaciarCarrito() {
     }
 }
 
-function limpiarListaCarrito(){
-    
+function limpiarListaCarrito() {
+
     tituloCarrito.style.display = 'none'
     let tabla = document.querySelector("#carrito")
-    tabla.innerHTML=""
+    tabla.innerHTML = ""
 
 }
 
@@ -126,11 +126,11 @@ function agregarAlCarrito(id) {
 }
 
 function cargarPaquetes(array) {
-    
+
     let fila = ""
     tabla.innerHTML = ""
 
-   if (array.length === 0)  return
+    if (array.length === 0) return
 
     array.forEach(paquete => {
 
@@ -139,10 +139,10 @@ function cargarPaquetes(array) {
          * *
          * DESESTRUCTURACION *
          *                 * *
-                             **/ 
-       
-        let {numeroPaquete, nombre, precio} = paquete
-        const precioIVA = parseFloat( precio * IVA).toFixed(2);
+                             **/
+
+        let { numeroPaquete, nombre, precio } = paquete
+        const precioIVA = parseFloat(precio * IVA).toFixed(2);
 
         fila = `<tr>
                     <td>${numeroPaquete}</td>
@@ -151,7 +151,7 @@ function cargarPaquetes(array) {
                     <td> $ ${precioIVA}</td>
                     <td><button class="btn btn-info" id="btn${numeroPaquete}">+</button></td>
                 </tr>`
-                //<td> $ ${paquete.precioConIva()}</td>
+        //<td> $ ${paquete.precioConIva()}</td>
         tabla.innerHTML += fila
     })
     console.table(array)
