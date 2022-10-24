@@ -1,14 +1,14 @@
-const IVA = 1.21
+
 const paquetes = [];
 let carrito = [];
 const URL = "../bbdd/paquetes.json"
 
 const llenarArrayPaquetes = 
 
-        /*FETCH*/
+        /*FETCH desde BBDD JSON para cargar los paquetes*/
 
     async () => {
-        debugger
+      
         try {
             const response = await fetch(URL)
             const data = await response.json()
@@ -28,13 +28,14 @@ const llenarArrayPaquetes =
     document.addEventListener("DOMContentLoaded", async ()=> {
         const espero = await llenarArrayPaquetes()
         cargarPaquetes(paquetes)
-        eventoEnBotones()       
+        eventoEnBotones()
+               
     })
 
 
 
 function agregarPaquete() {
-    debugger
+    
     let nuevoPaquete = prompt("Ingresa un nuevo Paquete:")
     let resultado = paquetes.find(resultado => resultado.nombre === nuevoPaquete)
 

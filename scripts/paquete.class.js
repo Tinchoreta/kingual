@@ -1,3 +1,5 @@
+const IVA = 1.21
+
 class Paquete {
     constructor(id, numeroPaquete, nombre, precio) {
         this.id = id;
@@ -6,7 +8,7 @@ class Paquete {
         this.precio = precio;
     }
 
-    precioConIva() {
+ precioConIva() {
         return parseFloat( this.precio * IVA).toFixed(2);
     }
 }

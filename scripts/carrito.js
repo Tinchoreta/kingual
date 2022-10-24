@@ -13,6 +13,7 @@ botonVerCarrito.addEventListener("click", () =>
     swal("Recuperando carrito")
    // recuperarCarrito()
     recuperoCarrito()
+    eventoEnBotonesCarrito()
     }
     )
 
@@ -20,7 +21,7 @@ botonVerCarrito.addEventListener("click", () =>
 
 function eventoEnBotones() {
 
-    debugger
+    
     paquetes.forEach(paq => {
         const btn = document.querySelector(`#btn${paq.numeroPaquete}`)
         btn.addEventListener("click", () => agregarAlCarrito(`${paq.numeroPaquete}`))
@@ -28,8 +29,25 @@ function eventoEnBotones() {
 }
 
 
+function eventoEnBotonesCarrito() {
+    
+    paquetes.forEach(paq => {
+        const btn = document.querySelector(`#btnDel${paq.numeroPaquete}`)
+        btn.addEventListener("click", () => quitarDelCarrito(`${paq.numeroPaquete}`))
+    })
+}
+
+function  quitarDelCarrito(id){
+
+    const indexPaquete = carrito.findIndex(paq => paq.numeroPaquete === id)
+    carrito.splice(indexPaquete,1)
+    console.table(carrito)
+    localStorage.setItem("carrito", JSON.stringify(carrito))
+    recuperoCarrito()
+}
+
 function recuperoCarrito() {
-    debugger
+    
     let carrito = JSON.parse(localStorage.getItem("carrito"))
 
     //OPERADOR AND
@@ -44,7 +62,7 @@ function recuperoCarrito() {
             let fila = `<tr>
                             <td>${paq.nombre}</td>
                             <td>$ ${paq.precio}</td>
-                            
+                            <td><button class="btn btn-danger" id="btnDel${paq.numeroPaquete}"></button></td>
                         </tr>`
             tabla.innerHTML += fila
         });
@@ -66,7 +84,7 @@ const alerta = (mensaje, icono) => {    //ICONOS: question, warning, error, info
 }
 
 function vaciarCarrito() {
-    debugger
+    
     if (Object.entries(carrito).length > 0) {
 
         Swal.fire({
@@ -91,7 +109,7 @@ function vaciarCarrito() {
 }
 
 function limpiarListaCarrito(){
-    debugger
+    
     tituloCarrito.style.display = 'none'
     let tabla = document.querySelector("#carrito")
     tabla.innerHTML=""
@@ -106,28 +124,29 @@ function agregarAlCarrito(id) {
 }
 
 function cargarPaquetes(array) {
-    debugger
+    
     let fila = ""
     tabla.innerHTML = ""
 
    if (array.length === 0)  return
 
     array.forEach(paquete => {
-        
+
         //OPERADORES AVANZADOS
         /**
          * *
          * DESESTRUCTURACION *
          *                 * *
                              **/ 
-
+       
         let {numeroPaquete, nombre, precio} = paquete
-        
+        const precioIVA = parseFloat( precio * IVA).toFixed(2);
+
         fila = `<tr>
                     <td>${numeroPaquete}</td>
                     <td>${nombre}</td>
                     <td> $ ${precio}</td>
-                    
+                    <td> $ ${precioIVA}</td>
                     <td><button class="btn btn-info" id="btn${numeroPaquete}">+</button></td>
                 </tr>`
                 //<td> $ ${paquete.precioConIva()}</td>
