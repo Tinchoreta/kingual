@@ -122,7 +122,25 @@ function agregarAlCarrito(id) {
     const paquete = paquetes.find(paq => paq.numeroPaquete == id)
     carrito.push(paquete)
     //console.table(carrito)
-    localStorage.setItem("carrito", JSON.stringify(carrito))
+    try{
+
+        localStorage.setItem("carrito", JSON.stringify(carrito))
+        mostrarMensaje('Agregado','Se agregó paquete de clases al carrito: ${paq.nombre}', 'success')
+    } catch(error){
+        console.log(error)
+        mostrarMensaje('No se pudo agregar al carrito','Error: ${error}', 'error')
+    }
+}
+
+function mostrarMensaje(titulo='Titulo', mensaje='Kingual Education'){
+    Swal.fire({
+        position: 'center',
+        icon: 'error',
+        showConfirmButton: false,
+        title: titulo,
+        text: mensaje,
+        timer: 1500
+      })
 }
 
 function cargarPaquetes(array) {
