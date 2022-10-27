@@ -54,7 +54,7 @@ function recuperoCarrito() {
     //OPERADOR AND
     if ((typeof carrito !== 'undefined' && typeof carrito !== 'null') && carrito !== null) {
 
-        carrito.length === 0 && alerta("No se encontro carrito en almacenamiento")
+        carrito.length === 0 && alerta("No hay items en el carrito",'info')
 
         tituloCarrito.style.display = 'block'
 
