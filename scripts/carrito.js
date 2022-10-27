@@ -125,7 +125,7 @@ function agregarAlCarrito(id) {
     try{
 
         localStorage.setItem("carrito", JSON.stringify(carrito))
-        mostrarMensaje('Agregado','Se agregó paquete de clases al carrito: ${paq.nombre}', 'success')
+        mostrarMensaje('Agregado','Se agregó paquete de clases al carrito: ${paquete.nombre}', 'success')
     } catch(error){
         console.log(error)
         mostrarMensaje('No se pudo agregar al carrito','Error: ${error}', 'error')
