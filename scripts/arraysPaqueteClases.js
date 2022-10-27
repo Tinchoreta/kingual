@@ -28,8 +28,7 @@ const llenarArrayPaquetes =
     document.addEventListener("DOMContentLoaded", async ()=> {
         const espero = await llenarArrayPaquetes()
         cargarPaquetes(paquetes)
-        eventoEnBotones()
-               
+                       
     })
 
 

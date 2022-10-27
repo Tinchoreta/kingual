@@ -17,10 +17,9 @@ botonVerCarrito.addEventListener("click", () => {
 
 
 
-function eventoEnBotones() {
+function eventoEnBotones(array) {
 
-
-    paquetes.forEach(paq => {
+    array.forEach(paq => {
         const btn = document.querySelector(`#btn${paq.numeroPaquete}`)
         btn.addEventListener("click", () => agregarAlCarrito(`${paq.numeroPaquete}`))
     })
@@ -54,10 +53,9 @@ function recuperoCarrito() {
     //OPERADOR AND
     if ((typeof carrito !== 'undefined' && typeof carrito !== 'null') && carrito !== null) {
 
-        carrito.length === 0 && alerta("No hay items en el carrito",'info')
-
-        tituloCarrito.style.display = 'block'
-
+        carrito.length === 0 && alerta("No hay items en el carrito",'info') 
+        carrito.length === 0? limpiarListaCarrito():tituloCarrito.style.display = 'block'
+        
         let tabla = document.querySelector("#carrito")
         carrito.forEach(paq => {
             let fila = `<tr>
@@ -69,7 +67,8 @@ function recuperoCarrito() {
         });
         eventoEnBotonesCarrito()
     } else {
-        console.log(carrito)
+        
+        limpiarListaCarrito()
     }
 }
 
@@ -110,7 +109,7 @@ function vaciarCarrito() {
     }
 }
 
-function limpiarListaCarrito() {
+function limpiarListaCarrito () {
 
     tituloCarrito.style.display = 'none'
     let tabla = document.querySelector("#carrito")
@@ -172,6 +171,7 @@ function cargarPaquetes(array) {
         //<td> $ ${paquete.precioConIva()}</td>
         tabla.innerHTML += fila
     })
+    eventoEnBotones(array)
     console.table(array)
 }
 
@@ -190,11 +190,13 @@ function filtrarPaquetes() { //FILTRAR PAQUETES EN LA TABLA INGRESANDO PARTE DEL
             
         } else {
             cargarPaquetes(resultadobusqueda)
+            
         }
     } else {
         cargarPaquetes(paquetes)
+        
     }
-    eventoEnBotones()
+    
 }
 
 inputFiltrar.addEventListener("input", filtrarPaquetes) //Va filtrando conforme vamos escribiendo
