@@ -187,12 +187,14 @@ function filtrarPaquetes() { //FILTRAR PAQUETES EN LA TABLA INGRESANDO PARTE DEL
             console.clear()
             console.warn("No se encontraron paquetes.")
             cargarPaquetes(paquetes)
+            
         } else {
             cargarPaquetes(resultadobusqueda)
         }
     } else {
         cargarPaquetes(paquetes)
     }
+    eventoEnBotones()
 }
 
 inputFiltrar.addEventListener("input", filtrarPaquetes) //Va filtrando conforme vamos escribiendo
