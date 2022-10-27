@@ -125,17 +125,17 @@ function agregarAlCarrito(id) {
     try{
 
         localStorage.setItem("carrito", JSON.stringify(carrito))
-        mostrarMensaje('Agregado','Se agregó paquete de clases al carrito: ${paquete.nombre}', 'success')
+        mostrarMensaje('Agregado','Se agregó paquete de clases al carrito:', 'success')
     } catch(error){
         console.log(error)
         mostrarMensaje('No se pudo agregar al carrito','Error: ${error}', 'error')
     }
 }
 
-function mostrarMensaje(titulo='Titulo', mensaje='Kingual Education'){
+function mostrarMensaje(titulo='Titulo', mensaje='Kingual Education', icono){
     Swal.fire({
         position: 'center',
-        icon: 'error',
+        icon: icono,
         showConfirmButton: false,
         title: titulo,
         text: mensaje,
