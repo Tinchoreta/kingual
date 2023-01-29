@@ -144,3 +144,10 @@ nav ul li a {
     margin: 30px;
     padding: 10px;
 }
+
+.change-my-color {
+    filter: sepia(100%) saturate(795%) hue-rotate(188deg) brightness(117%) contrast(100%);
+    height: 150px;
+    width: 210px;
+
+}
