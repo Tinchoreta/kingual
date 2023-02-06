@@ -63,12 +63,6 @@
 
 @media screen and (max-width: 480px) {
 
-    header {
-        grid-template-columns: 1fr;
-        grid-auto-flow: column;
-        grid-auto-rows: min-content;
-    }
-
     .mainPresentation {
 
         @include MarginPadding(5px, 5px);
