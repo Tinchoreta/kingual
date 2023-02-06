@@ -37,7 +37,7 @@ nav {
         position: absolute;
         top: 65px;
         left: 0;
-        background: map-get($colores, "color-principal-normal");
+        background: rgba(0, 179, 214,0.75);
         width: 100%;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
         transition: clip-path .8s ease-out;
