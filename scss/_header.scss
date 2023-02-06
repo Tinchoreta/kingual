@@ -8,8 +8,8 @@
 // "color-fondo-tarjetas": #efefef,
 
 nav {
-    background-color: rgb(0, 119, 182);
-    background: rgb(3, 4, 94);
+    background-color: #0077b6;
+    background: #03045e;
     background: -moz-linear-gradient(90deg, rgba(3, 4, 94, 1) 0%, rgba(0, 119, 182, 1) 21%, rgba(0, 180, 216, 1) 55%);
     background: -webkit-linear-gradient(90deg, rgba(3, 4, 94, 1) 0%, rgba(0, 119, 182, 1) 21%, rgba(0, 180, 216, 1) 55%);
     background: linear-gradient(90deg, rgba(3, 4, 94, 1) 0%, rgba(0, 119, 182, 1) 21%, rgba(0, 180, 216, 1) 55%);
@@ -37,7 +37,7 @@ nav {
         position: absolute;
         top: 65px;
         left: 0;
-        background: map-get($colores, "color-principal-suave");
+        background: map-get($colores, "color-principal-fuerte");
         width: 100%;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
         transition: clip-path .8s ease-out;

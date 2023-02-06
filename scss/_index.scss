@@ -106,6 +106,7 @@ body {
 
 .seccionMain {
     @include MarginPadding(5px, 5px);
+    position: relative;
     top: 65px;
 }
 
