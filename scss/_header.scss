@@ -37,12 +37,13 @@ nav {
         position: absolute;
         top: 65px;
         left: 0;
-        background: map-get($colores, "color-principal-muy-suave");
+        background: map-get($colores, "color-principal-suave");
         width: 100%;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
         transition: clip-path .8s ease-out;
         z-index: 50;
-
+        list-style-type: none;
+        text-decoration: none;
     }
 
     nav ul .opciones {
@@ -54,12 +55,14 @@ nav {
         align-items: center;
         z-index: 80;
         list-style-type: none;
+        text-decoration: none;
     }
 
     nav ul .opciones li {
         width: 180px;
         margin: 20px 0;
-
+        list-style-type: none;
+        text-decoration: none;
     }
 
     nav ul .opciones li a {
@@ -67,6 +70,7 @@ nav {
         padding: 10px 30px;
         border-bottom: 2px solid transparent;
         transition: all ease-in .8s;
+        text-decoration: none;
     }
 
     nav ul .opciones li a:hover {
@@ -175,6 +179,7 @@ nav {
                     a {
                         margin: 0;
                         padding: 0;
+                        text-decoration: none;
                     }
                 }
             }
