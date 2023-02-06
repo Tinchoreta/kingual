@@ -23,21 +23,20 @@
 
 <body>
 	<header>
-		<a href="./index.html"> 
-				<svg>
-					<image class="change-my-color" xlink:href="./images/Kingual_new.svg" width="96" height="96" src="" />
-				</svg>
-			</a>
-			
-		<nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: black;">
+		<nav class="navbar navbar-custom navbar-expand-lg" id="nav">
 			<div class="container-fluid">
+				<a href="./index.html"> 
+					<svg>
+						<image class="change-my-color" xlink:href="./images/Kingual_new.svg" width="96" height="96" src="" />
+					</svg>
+				</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 					data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
 					aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-					<div class="navbar-nav">
+					<div class="navbar-nav" id="options">
 						<a class="nav-link active" aria-current="page" href="#">Home</a>
 						<a class="nav-link" href="./pages/ingles.html">Inglés</a>
 						<a class="nav-link" href="./pages/portugues.html">Portugués</a>
@@ -48,6 +47,11 @@
 					</div>
 				</div>
 			</div>
+			<div class="menu" id="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
 		</nav>
 	</header>
 
@@ -66,25 +70,6 @@
 			<p class="firstText">Desde nuestra experiencia, pretendemos brindarte todas las herramientas que estén a
 				nuestro alcance para
 				que cumplas tus sueños de conocer el mundo y acercarte al trabajo de tus sueños!</p>
-
-			<!--Existe un article porque este apartado puede ir variando acorde a promociones, descuentos, etc de Kingual-->
-			<article>
-				<h5 class="titulosSecundarios3">Empezar a estudiar inglés en Kingual Education es muy fácil</h5>
-				<ol>
-					<li> Inscribite </li>
-					<li> Elegí tu plan </li>
-					<li> Abona de la forma que quieras </li>
-					<li> Reserva tu clase y listo! </li>
-				</ol>
-
-				<p class="articleText">Clases personalizadas adaptadas a las necesidades de cada alumno.
-					Clases individuales y grupales (de hasta 4 personas) buscando la interacción y desarrollo del idioma
-					en contexto...
-					Pensado para viajeros, estudiantes universitarios y trabajadores que buscan obtener una mejor
-					posición :)</p>
-			</article>
-
-
 		</div>
 
 		<h2 class="titulosSecundarios">Mensaje de presentación de nuestro CEO</h2>
@@ -177,6 +162,8 @@
 
 	<!-- Production version -->
 	<script src="https://unpkg.com/@popperjs/core@2"></script>
+	<script src="js/menu.js"></script>
+    <script src="js/scroll.js"></script>
 </body>
 
 </html>

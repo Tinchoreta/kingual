@@ -1,5 +1,5 @@
-let ubicacionPrincial = window.scrollY
-let $nav = document.querySelector('#nav')
+let ubicacionPrincial = window.scrollY;
+let $nav = document.querySelector('#nav');
 
 window.addEventListener('scroll', function(){
     let ubicacionActual = this.window.scrollY
@@ -10,7 +10,7 @@ window.addEventListener('scroll', function(){
     }
     else {
         //oculta el tamaño del header/nav
-        $nav.style.top = "-157px"
+        $nav.style.top = "-383.2px"
     }    
-    
-})
+    ubicacionPrincipal = desplazamientoActual;
+});
