@@ -20,7 +20,7 @@ nav {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#03045e", endColorstr="#00b4d8", GradientType=1);
   object-fit: fill;
   transition: all ease-in-out 1s;
-  border-bottom: 2.5px solid;
+  border-bottom: 1.5px solid;
   padding: 10px 20px;
   width: 100%;
   height: 65px;
@@ -65,7 +65,7 @@ nav ul .opciones li {
   text-decoration: none; }
 
 nav ul .opciones li a {
-  color: #0077B6;
+  color: #FFFF;
   padding: 10px 30px;
   border-bottom: 2px solid transparent;
   transition: all ease-in .8s;
