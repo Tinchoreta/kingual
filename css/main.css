@@ -11,20 +11,15 @@
   text-decoration: solid;
   text-shadow: #03045E; }
 
-header {
-  font-size: medium;
-  min-height: min-content;
-  max-height: max-content; }
-
-header a {
-  padding-top: 7px;
-  padding-left: 10px;
-  justify-self: start;
-  align-self: center; }
-
 nav {
+  background-color: #0077b6;
+  background: #03045e;
+  background: -moz-linear-gradient(90deg, #03045e 0%, #0077b6 21%, #00b4d8 55%);
+  background: -webkit-linear-gradient(90deg, #03045e 0%, #0077b6 21%, #00b4d8 55%);
+  background: linear-gradient(90deg, #03045e 0%, #0077b6 21%, #00b4d8 55%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#03045e", endColorstr="#00b4d8", GradientType=1);
+  object-fit: fill;
   transition: all ease-in-out 1s;
-  background: #0077B6;
   border-bottom: 2.5px solid;
   padding: 10px 20px;
   width: 100%;
@@ -37,10 +32,10 @@ nav {
   align-items: center;
   z-index: 10; }
   nav nav .logo {
-    width: 50%; }
+    width: 100%; }
   nav nav ul {
     position: absolute;
-    top: 65px;
+    top: 355px;
     left: 0;
     background: #CAF0F8;
     width: 100%;
@@ -54,7 +49,8 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 80; }
+    z-index: 80;
+    list-style-type: none; }
   nav nav ul .opciones li {
     width: 180px;
     margin: 20px 0; }
@@ -93,21 +89,66 @@ nav {
   nav .animacionMenu span:nth-child(3) {
     transform: rotate(-45deg) translate(-3px, 3px); }
 
-nav ul li a {
-  align-items: center;
-  justify-content: center;
-  justify-items: center;
-  align-self: center;
-  justify-self: center; }
+.menu {
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+  position: relative;
+  z-index: 20;
+  cursor: pointer; }
+  .menu span {
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    display: block;
+    position: absolute;
+    background: #fff;
+    transition: all 0.25s ease;
+    transform-origin: 0px 100%; }
+  .menu span:nth-child(2) {
+    top: calc(50% - 2px); }
+  .menu span:nth-child(3) {
+    bottom: 0; }
 
-.navbar-custom {
-  background-color: #0077b6;
-  background: #03045e;
-  background: -moz-linear-gradient(90deg, #03045e 0%, #0077b6 21%, #00b4d8 55%);
-  background: -webkit-linear-gradient(90deg, #03045e 0%, #0077b6 21%, #00b4d8 55%);
-  background: linear-gradient(90deg, #03045e 0%, #0077b6 21%, #00b4d8 55%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#03045e", endColorstr="#00b4d8", GradientType=1);
-  object-fit: fill; }
+.animacionMenu span:nth-child(1) {
+  transform: rotate(45deg) translate(-2px, 1px); }
+
+.animacionMenu span:nth-child(2) {
+  opacity: 0; }
+
+.animacionMenu span:nth-child(3) {
+  transform: rotate(-45deg) translate(-3px, 3px); }
+
+.activeMenu {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+
+@media screen and (min-width: 768px) {
+  nav ul {
+    position: initial;
+    clip-path: none; }
+    nav ul .opciones {
+      flex-direction: row;
+      justify-content: flex-end; }
+      nav ul .opciones li {
+        margin: 0 10px;
+        width: auto; }
+        nav ul .opciones li a {
+          margin: 0;
+          padding: 0; }
+  nav .menu {
+    display: none; } }
+
+@media screen and (min-width: 1024px) {
+  nav {
+    height: 70px; }
+    nav ul .opciones li {
+      width: 120px; }
+      nav ul .opciones li a {
+        font-weight: bold;
+        letter-spacing: 1.2px;
+        padding: 2px 10px; }
+    nav .menu {
+      display: none; } }
 
 .menuPrincipal {
   margin: 0 auto;
@@ -121,10 +162,6 @@ nav ul li a {
   list-style: none;
   padding: 3px;
   flex-wrap: wrap; }
-
-.navbar {
-  border-radius: 6px;
-  background-color: #00B4D8; }
 
 .menuPrincipal__item {
   align-items: center;
@@ -212,44 +249,6 @@ nav ul li a {
   text-decoration: solid;
   text-shadow: #03045E; }
 
-header {
-  background-color: #0077b6;
-  background: #03045e;
-  background: -moz-linear-gradient(90deg, #03045e 0%, #0077b6 21%, #00b4d8 55%);
-  background: -webkit-linear-gradient(90deg, #03045e 0%, #0077b6 21%, #00b4d8 55%);
-  background: linear-gradient(90deg, #03045e 0%, #0077b6 21%, #00b4d8 55%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#03045e", endColorstr="#00b4d8", GradientType=1);
-  object-fit: fill;
-  font-size: medium;
-  position: sticky;
-  min-height: min-content;
-  max-height: max-content;
-  top: 0;
-  display: grid;
-  align-content: start;
-  justify-content: start;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-columns: min-content;
-  grid-auto-rows: min-content;
-  z-index: 100000; }
-
-header a {
-  padding-top: 7px;
-  padding-left: 10px;
-  justify-self: start;
-  align-self: center; }
-
-nav {
-  align-self: end;
-  justify-self: end; }
-
-nav ul li a {
-  align-items: center;
-  justify-content: center;
-  justify-items: center;
-  align-self: end;
-  justify-self: end; }
-
 .menuPrincipal {
   margin: 0 auto;
   display: flex;
@@ -263,10 +262,6 @@ nav ul li a {
   flex-wrap: wrap;
   align-self: end;
   justify-self: end; }
-
-.navbar {
-  border-radius: 6px;
-  background-color: #00B4D8; }
 
 .menuPrincipal__item {
   align-items: center;
@@ -349,9 +344,9 @@ main ul {
   width: 90%;
   justify-content: start;
   align-content: start;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(min-content, max-content));
-  grid-template-areas: "foto texto" "foto article"; }
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .mainPresentation img {
   margin: 0px;
@@ -359,8 +354,8 @@ main ul {
   height: 400px;
   width: 400px;
   object-fit: contain;
-  grid-column: 1;
-  grid-area: foto; }
+  align-items: center;
+  align-self: center; }
 
 .firstText {
   margin: 15px 10px 10px 0px;
@@ -597,10 +592,14 @@ main div section iframe {
 @media screen and (max-width: 768px) {
   /*Index*/
   .mainPresentation {
-    display: grid;
-    align-content: stretch;
-    grid-template-columns: 1;
-    grid-template-areas: "foto" "texto" "article"; }
+    margin: 5px;
+    padding: 5px;
+    width: 90%;
+    justify-content: start;
+    align-content: start;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
   /*Lecciones*/
   main ul div {
     justify-content: center;
@@ -640,10 +639,14 @@ main div section iframe {
     grid-auto-flow: column;
     grid-auto-rows: min-content; }
   .mainPresentation {
-    display: grid;
-    align-content: flex-start;
-    grid-template-columns: 1;
-    grid-template-areas: "foto" "texto" "article"; }
+    margin: 5px;
+    padding: 5px;
+    width: 90%;
+    justify-content: start;
+    align-content: start;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
   .mainPresentation img {
     min-width: 200px;
     width: 250px;

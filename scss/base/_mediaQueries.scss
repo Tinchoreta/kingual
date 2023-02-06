@@ -5,13 +5,13 @@
     /*Index*/
     .mainPresentation {
 
-        display: grid;
-        align-content: stretch;
-        grid-template-columns: 1;
-        grid-template-areas:
-            "foto"
-            "texto"
-            "article";
+        @include MarginPadding(5px, 5px);
+        width: 90%;
+        justify-content: start;
+        align-content: start;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     /*Lecciones*/
@@ -71,13 +71,13 @@
 
     .mainPresentation {
 
-        display: grid;
-        align-content:flex-start;
-        grid-template-columns: 1;
-        grid-template-areas:
-            "foto"
-            "texto"
-            "article";
+        @include MarginPadding(5px, 5px);
+        width: 90%;
+        justify-content: start;
+        align-content: start;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .mainPresentation img {

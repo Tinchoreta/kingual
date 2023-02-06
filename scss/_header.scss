@@ -8,25 +8,16 @@
 // "color-fondo-staff": rgba(14, 44, 23, 36),
 // "color-fondo-tarjetas": #efefef,
 
-header {
-
-    font-size: medium;
-    min-height: min-content;
-    max-height: max-content;
-}
-
-header a {
-    padding-top: 7px;
-    padding-left: 10px;
-    justify-self: start;
-    align-self: center;
-}
-
 nav {
-
+    background-color: rgb(0, 119, 182);
+    background: rgb(3, 4, 94);
+    background: -moz-linear-gradient(90deg, rgba(3, 4, 94, 1) 0%, rgba(0, 119, 182, 1) 21%, rgba(0, 180, 216, 1) 55%);
+    background: -webkit-linear-gradient(90deg, rgba(3, 4, 94, 1) 0%, rgba(0, 119, 182, 1) 21%, rgba(0, 180, 216, 1) 55%);
+    background: linear-gradient(90deg, rgba(3, 4, 94, 1) 0%, rgba(0, 119, 182, 1) 21%, rgba(0, 180, 216, 1) 55%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#03045e", endColorstr="#00b4d8", GradientType=1);
+    object-fit: fill;
 
     transition: all ease-in-out 1s;
-    background: map-get($colores,"color-principal-fuerte");
     border-bottom: 2.5px solid ;
     padding: 10px 20px;
     width: 100%;
@@ -40,18 +31,19 @@ nav {
     z-index: 10;
 
     nav .logo {
-        width: 50%;
+        width: 100%;
     }
 
     nav ul {
         position: absolute;
-        top: 65px;
+        top: 355px;
         left: 0;
         background: map-get($colores,"color-principal-muy-suave");
         width: 100%;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
         transition: clip-path .8s ease-out;
         z-index: 50;
+        
     }
 
     nav ul .opciones {
@@ -62,11 +54,13 @@ nav {
         justify-content: center;
         align-items: center;
         z-index: 80;
+        list-style-type:none;
     }
 
     nav ul .opciones li {
         width: 180px;
         margin: 20px 0;
+        
     }
 
     nav ul .opciones li a {
@@ -122,23 +116,92 @@ nav {
     }
 }
 
-nav ul li a {
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-    align-self: center;
-    justify-self: center;
+
+.menu {
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    z-index: 20;
+    cursor: pointer;
+    span {
+        width: 100%;
+        height: 4px;
+        border-radius: 4px;
+        display: block;
+        position: absolute;
+        background: #fff;
+        transition: all 0.25s ease;
+        transform-origin: 0px 100%;
+    }
+    span:nth-child(2){
+        top: calc(50% - 2px);
+    }
+    span:nth-child(3){
+        bottom: 0;
+    }
 }
 
-.navbar-custom{
-    background-color: rgb(0, 119, 182);
-    background: rgb(3, 4, 94);
-    background: -moz-linear-gradient(90deg, rgba(3, 4, 94, 1) 0%, rgba(0, 119, 182, 1) 21%, rgba(0, 180, 216, 1) 55%);
-    background: -webkit-linear-gradient(90deg, rgba(3, 4, 94, 1) 0%, rgba(0, 119, 182, 1) 21%, rgba(0, 180, 216, 1) 55%);
-    background: linear-gradient(90deg, rgba(3, 4, 94, 1) 0%, rgba(0, 119, 182, 1) 21%, rgba(0, 180, 216, 1) 55%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#03045e", endColorstr="#00b4d8", GradientType=1);
-    object-fit: fill;
+.animacionMenu span:nth-child(1){
+transform: rotate(45deg) translate(-2px,1px); 
 }
+
+.animacionMenu span:nth-child(2){
+opacity: 0;
+}
+
+.animacionMenu span:nth-child(3){
+transform: rotate(-45deg) translate(-3px,3px); 
+}
+
+.activeMenu {
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+@media screen and (min-width: 768px) {
+nav {
+    ul {
+        position: initial;
+        clip-path: none;
+        .opciones {
+            flex-direction: row;
+            justify-content: flex-end;
+            li {
+                margin: 0 10px;
+                width: auto;
+                a {
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+    }
+    .menu {
+        display: none;
+    }
+}
+}
+@media screen and (min-width: 1024px) {
+nav {
+    height: 70px;
+    ul {
+        .opciones {
+            li {
+                width: 120px;
+                a {
+                    font-weight: bold;
+                    letter-spacing: 1.2px;
+                    padding: 2px 10px;
+                }
+            }
+        }
+    }
+    .menu {
+        display: none;
+    }
+}
+}
+
 .menuPrincipal {
     margin: 0 auto;
     display: flex;
@@ -153,10 +216,7 @@ nav ul li a {
     flex-wrap: wrap;
 }
 
-.navbar {
-    border-radius: 6px;
-    background-color: #00B4D8;
-}
+
 
 .menuPrincipal__item {
 
