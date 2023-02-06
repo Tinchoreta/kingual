@@ -24,7 +24,7 @@ header a {
 
 nav {
   transition: all ease-in-out 1s;
-  background: #242424;
+  background: #0077B6;
   border-bottom: 2.5px solid;
   padding: 10px 20px;
   width: 100%;
@@ -42,7 +42,7 @@ nav {
     position: absolute;
     top: 65px;
     left: 0;
-    background: #242424;
+    background: #CAF0F8;
     width: 100%;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     transition: clip-path .8s ease-out;
@@ -59,13 +59,13 @@ nav {
     width: 180px;
     margin: 20px 0; }
   nav nav ul .opciones li a {
-    color: #e5d8bf;
+    color: #0077B6;
     padding: 10px 30px;
     border-bottom: 2px solid transparent;
     transition: all ease-in .8s; }
   nav nav ul .opciones li a:hover {
-    border-bottom: 2px solid #d55252;
-    color: #f1f1f1; }
+    border-bottom: 2px solid #0077B6;
+    color: #FFFF; }
   nav nav .menu {
     display: inline-block;
     width: 30px;

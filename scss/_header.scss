@@ -1,3 +1,13 @@
+
+// "color-principal-muy-fuerte": #03045E,
+// "color-principal-fuerte": #0077B6,
+// "color-principal-normal": #00B4D8,
+// "color-principal-suave": #90E0EF,
+// "color-principal-muy-suave": #CAF0F8,
+// "color-neutro": #FFFF,
+// "color-fondo-staff": rgba(14, 44, 23, 36),
+// "color-fondo-tarjetas": #efefef,
+
 header {
 
     font-size: medium;
@@ -16,7 +26,7 @@ nav {
 
 
     transition: all ease-in-out 1s;
-    background: #242424;
+    background: map-get($colores,"color-principal-fuerte");
     border-bottom: 2.5px solid ;
     padding: 10px 20px;
     width: 100%;
@@ -37,7 +47,7 @@ nav {
         position: absolute;
         top: 65px;
         left: 0;
-        background: #242424;
+        background: map-get($colores,"color-principal-muy-suave");
         width: 100%;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
         transition: clip-path .8s ease-out;
@@ -60,15 +70,15 @@ nav {
     }
 
     nav ul .opciones li a {
-        color: #e5d8bf;
+        color: map-get($colores,"color-principal-fuerte");
         padding: 10px 30px;
         border-bottom: 2px solid transparent;
         transition: all ease-in .8s;
     }
 
     nav ul .opciones li a:hover {
-        border-bottom: 2px solid #d55252;
-        color: #f1f1f1;
+        border-bottom: 2px solid map-get($colores,"color-principal-fuerte");
+        color: map-get($colores, "color-neutro");
     }
 
     nav .menu {
