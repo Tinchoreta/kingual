@@ -18,7 +18,7 @@ nav {
 
     transition: all ease-in-out 1s;
     border-bottom: 1.5px solid;
-    padding: 10px 20px;
+    padding: 5px;
     width: 100%;
     height: 65px;
     position: fixed;
@@ -37,7 +37,7 @@ nav {
         position: absolute;
         top: 65px;
         left: 0;
-        background: map-get($colores, "color-principal-fuerte");
+        background: map-get($colores, "color-principal-normal");
         width: 100%;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
         transition: clip-path .8s ease-out;
@@ -320,6 +320,6 @@ nav {
 
 .change-my-color {
     filter: sepia(100%) saturate(795%) hue-rotate(188deg) brightness(117%) contrast(100%);
-    height: 150px;
-    width: 210px;
+    height: 45px;
+    width: 150px;
 }
