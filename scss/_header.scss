@@ -28,7 +28,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     z-index: 10;
-
+}
     nav .logo {
         width: 100%;
     }
@@ -113,8 +113,6 @@ nav {
     .animacionMenu span:nth-child(3) {
         transform: rotate(-45deg) translate(-3px, 3px);
     }
-}
-
 
 .menu {
     display: inline-block;
