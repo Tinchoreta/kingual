@@ -10,7 +10,7 @@ window.addEventListener('scroll', function(){
     }
     else {
         //oculta el tamaño del header/nav
-        $nav.style.top = "-383.2px"
+        $nav.style.top = "-px"
     }    
     ubicacionPrincipal = desplazamientoActual;
 });
