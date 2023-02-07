@@ -2,6 +2,6 @@ var userFeed = new Instafeed({
     get: 'tinchoreta',
     target: "instafeed-container",
     resolution: 'low_resolution',
-    accessToken: 'IGQVJVTVFCUmFodE9uTGcyNHQzUUdndXRNNWNkM2JMUm9RdzU1ZAWlweU1HMHdYSTBTNE11MHZAXVFZAFQ2s1cmpvT3hWUGpLWmFZAVG0xcnJLcldreGNtcndad2dWam5EY3YwSDlZAQldTOFJLZAHFtOHQyXwZDZD'
+    accessToken: 'IGQVJYcmJYaEVpN05PTG1oOWRVVmExZAXRKYUhtazZAzSndvbmFZAQTFXdEFNdC1DTHlzMkhVYjJtQnZAhSGZAsNXJyTFBoWHZAvQ25GVFJrYlgzUThBUndTS3BoMUpDbDNzbFh5R0pzV29mU2trMC1JbHRTcQZDZD'
 });
 userFeed.run();
