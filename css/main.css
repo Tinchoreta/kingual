@@ -59,10 +59,12 @@ nav ul .opciones {
   text-decoration: none; }
 
 nav ul .opciones li {
-  width: 180px;
-  margin: 20px 0;
+  margin: 10px 0;
   list-style-type: none;
-  text-decoration: none; }
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; }
 
 nav ul .opciones li a {
   color: #FFFF;
@@ -161,12 +163,19 @@ nav .menu span:nth-child(3) {
 @media screen and (min-width: 1024px) {
   nav {
     height: 70px; }
-    nav ul .opciones li {
-      width: 120px; }
-      nav ul .opciones li a {
-        font-weight: bold;
-        letter-spacing: 1.2px;
-        padding: 2px 10px; }
+    nav ul .opciones {
+      margin: 10px 0;
+      list-style-type: none;
+      text-decoration: none;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      flex-grow: 2; }
+      nav ul .opciones li {
+        width: 110px; }
+        nav ul .opciones li a {
+          font-weight: bold;
+          letter-spacing: 1.2px; }
     nav .menu {
       display: none; } }
 
@@ -409,19 +418,6 @@ video {
   width: 70%;
   height: calc(.5625 * 70vw); }
 
-<<<<<<< HEAD
-=======
-.igfeed-container {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(15, 100px);
-  width: 35%;
-  object-fit: scale-down; }
-
-.instafeed-container a img {
-  width: 25%; }
-
->>>>>>> 0ea7caa (tiktok)
 /*Staff*/
 .headerStaff {
   z-index: 100000; }
