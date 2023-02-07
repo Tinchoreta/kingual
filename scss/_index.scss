@@ -175,3 +175,22 @@ video {
     width: 70%;
     height: calc(.5625 * 70vw);
 }
+<<<<<<< HEAD
+=======
+
+.igfeed-container {
+    
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(15, 100px);
+    width: 35%;
+    object-fit:scale-down;
+}
+
+
+.instafeed-container a img {
+    
+    width: 25%;
+
+}
+>>>>>>> 0ea7caa (tiktok)
