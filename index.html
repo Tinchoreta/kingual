@@ -15,7 +15,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap"
 		rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.1/css/all.css">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<title>Kingual Education</title>
 
@@ -85,8 +85,19 @@
 
 		<h2 class="titulosSecundarios">Instagram</h2>
 
-		<div class="mainVideoDiv" style="text-align:center;">
-			<video src="./videos/Presentacion.mp4" controls autoplay loop></video>
+		<!--Instagram feed connection-->
+		<div id="instafeed-container" class="igfeed-container">
+
+
+
+			<script
+				src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+			
+			<!--Instagram feed connection-->
+		
+			<script src="./js/igFeed.js">
+			</script>
+
 		</div>
 
 		<div class="whatsapp">
@@ -138,16 +149,18 @@
 						data-bs-toggle="Facebook" data-bs-placement="bottom" data-bs-title="Facebook"> <i
 							class="fab fa-facebook"></i></a>
 
-					<!-- Twitter -->
-					<a href="https://www.tiktok.com/@kingualeducation" class="btn btn-primary btn-floating btn-lg border border-light"
-						target="_blank" data-bs-toggle="TikTok" data-bs-placement="bottom" data-bs-title="TikTok">
-						<i class="fa-brands fa-tiktok"></i></a>
-
 					<!-- Instagram -->
 					<a href="https://www.instagram.com/kingual.education/"
 						class="btn btn-primary btn-lg btn-floating border border-light" target="_blank"
 						data-bs-toggle="Instagram" data-bs-placement="bottom" data-bs-title="Instagram">
 						<i class="fab fa-instagram"></i></a>
+
+					<!-- TikTok -->
+					<a href="https://www.tiktok.com/@kingualeducation" class="btn btn-primary btn-floating btn-lg border border-light"
+						target="_blank" data-bs-toggle="TikTok" data-bs-placement="bottom" data-bs-title="TikTok">
+						<i class="fa-brands fa-tiktok"></i></a>
+
+
 				</div>
 			</div>
 			<!--Grid row-->
@@ -158,7 +171,8 @@
 		<!-- Copyright -->
 		<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
 			© 2023 Copyright:
-			<a class="text-white" href="http://kingualeducation.000webhost.com">Kingual Education</a>
+			<a class="text-white" href="http://kingualeducation.000webhost.com">Kingual Education®</a> - 
+			<a class="text-white" href="http://www.desafioIT.com.ar">DesafioIT®</a></a>
 		</div>
 		<!-- Copyright -->
 	</footer>
