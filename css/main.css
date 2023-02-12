@@ -664,7 +664,6 @@ footer {
 
 .whatsapp {
   display: flex;
-  border: none;
   overflow: hidden;
   cursor: pointer;
   align-items: flex-end;
@@ -673,8 +672,8 @@ footer {
   bottom: 1%;
   right: 1%; }
   .whatsapp img {
-    width: 45px;
-    height: 45px; }
+    width: 55px;
+    height: 55px; }
 
 /*Planes*/
 .mainPlanes {
@@ -814,8 +813,8 @@ main div section iframe {
     bottom: 15%;
     right: 3%; }
   .whatsapp img {
-    width: 55px;
-    height: 55px; } }
+    width: 65px;
+    height: 65px; } }
 
 @media screen and (max-width: 480px) {
   .mainPresentation {
@@ -847,8 +846,8 @@ main div section iframe {
     bottom: 10%;
     right: 4%; }
   .whatsapp img {
-    width: 45px;
-    height: 45px; }
+    width: 55px;
+    height: 55px; }
   .contactFormHtml {
     width: 310px;
     margin: 0.5em;

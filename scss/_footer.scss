@@ -11,7 +11,6 @@ footer {
 .whatsapp {
 
     display: flex;
-    border: none;
     overflow: hidden;
     cursor: pointer;
     align-items: flex-end;
@@ -22,8 +21,8 @@ footer {
 
     & img {
 
-        width: 45px;
-        height: 45px;
+        width: 55px;
+        height: 55px;
     }
 }
 
